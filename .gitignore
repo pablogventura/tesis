@@ -1,0 +1,7 @@
+*.pyc
+prueba*
+*.spkg
+*~
+*#
+*.bib.bak
+
