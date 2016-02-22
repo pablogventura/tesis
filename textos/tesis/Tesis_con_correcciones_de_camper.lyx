@@ -335,7 +335,7 @@ Campercholi
 \shape smallcaps
 \size largest
 
-\begin_inset VSpace 4cm
+\begin_inset VSpace 1cm
 \end_inset
 
 
@@ -345,7 +345,43 @@ Campercholi
 
 \shape default
 \size large
-Febrero de 2016
+Marzo de 2016
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset VSpace 2.5cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/by-nc-nd.svg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Quotes fld
+\end_inset
+
+Algoritmos para decidir definibilidad de relaciones en fragmentos de primer
+ orden
+\begin_inset Quotes frd
+\end_inset
+
+ por Pablo Ventura, se distribuye bajo la 
+\begin_inset CommandInset href
+LatexCommand href
+name "Licencia Creative Commons Atribución-NoComercial-SinDerivadas 2.5 Argentina"
+target "http://creativecommons.org/licenses/by-nc-nd/2.5/ar/"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
