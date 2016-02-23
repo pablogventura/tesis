@@ -355,7 +355,7 @@ Campercholi
 \shape smallcaps
 \size largest
 
-\begin_inset VSpace 1cm
+\begin_inset VSpace 2cm
 \end_inset
 
 
@@ -370,7 +370,7 @@ Marzo de 2016
 
 \begin_layout Plain Layout
 \align center
-\begin_inset VSpace 2.5cm
+\begin_inset VSpace 1.5cm
 \end_inset
 
 
@@ -654,6 +654,10 @@ end{titlepage}
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace -4cm
+\end_inset
+
+
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -706,8 +710,11 @@ In this work we develop algorithms to decide definability of relations over
 \begin_layout Plain Layout
 
 \lang english
-Additionally, we introduce a package for SageMath, Definability, where the
- algorithms are implemented.
+Additionally, we introduce a package for SageMath, 
+\emph on
+Definability
+\emph default
+, where the algorithms are implemented.
  The testing of this package inspired a theorem characterizing the binary
  relations definable by positive existential formulas over distributive
  lattices.
@@ -716,7 +723,7 @@ Additionally, we introduce a package for SageMath, Definability, where the
 \end_inset
 
 
-\begin_inset VSpace 2cm
+\begin_inset VSpace 1.5cm
 \end_inset
 
 
@@ -770,6 +777,34 @@ s binarias definibles por existenciales positivas en reticulados distributivos.
 \end_inset
 
 
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Clasificación: F.4.1 - Model theory.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+esta bien esta clasificacion? y las palabras clave?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Palabras
+\begin_inset space ~
+\end_inset
+
+clave: Teoría de modelos finitos, definibilidad, relaciones, algoritmos,
+ morfismos, fragmentos de primer orden.
 \end_layout
 
 \end_inset
