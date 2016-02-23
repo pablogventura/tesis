@@ -11,6 +11,7 @@
 \usepackage{hyperref}
 \usepackage[style=authoryear,backend=biber]{biblatex}
 
+%empieza codigo para usar [] en biblatex
 \newrobustcmd*{\parentexttrack}[1]{%
   \begingroup
   \blx@blxinit
@@ -22,7 +23,9 @@
   \let\parentext=\parentexttrack%
   \let\bibopenparen=\bibopenbracket%
   \let\bibcloseparen=\bibclosebracket}
+%termina codigo para usar [] en biblatex
 
+%empieza codigo para usar biblatex con un bib en ./
 \ifcsname input@path\endcsname 
   \edef\@basepath{\expandafter\@firstofone\input@path} %remove curly braces
   \def\rm@quotes#1"#2"#3\@nul{\ifx\relax#2\relax #1\else #2\fi} %
@@ -31,12 +34,12 @@
 
  \let\orig@addbibresource\addbibresource
 \renewrobustcmd*{\addbibresource}[2][type=file]{\orig@addbibresource[#1]{\@basepath#2}}
+%termina codigo para usar biblatex con un bib en ./
 
 \addbibresource{tesis.bib}
 
+%que todas las citas tengan parentesis
 \renewcommand{\cite}{\parencite}
-
-
 
 
 \usepackage{color}
@@ -51,23 +54,31 @@
 \lstnewenvironment{listing}[1][]
 {\lstset{#1}\pagebreak[0]}{\pagebreak[0]}
 
+% defino un nuevo estilo para la consola
 \lstdefinestyle{consola}
 {basicstyle=\scriptsize\bf\ttfamily,
 backgroundcolor=\color{gray75},
 }
 
+%la usan las representaciones de reticulados para los tres puntos
 \usepackage{mathdots}
 
+%invierto los margenes, para que anden bien
 \let\tmp\oddsidemargin
 \let\oddsidemargin\evensidemargin
 \let\evensidemargin\tmp
 \reversemarginpar
 
+%agrego comandos especiales para algoritmthx 
 \algnewcommand\algorithmicinput{\textbf{Entrada:}}
 \algnewcommand\Input{\item[\algorithmicinput]}
 
 \algnewcommand\algorithmicoutput{\textbf{Salida:}}
 \algnewcommand\Output{\item[\algorithmicoutput]}
+
+%%para tener margenes iguales a pesar de usar book con doble faz
+%\usepackage{geometry}
+%\geometry{bindingoffset=0.7cm,hratio=1:1}
 \end_preamble
 \use_default_options false
 \begin_modules
@@ -152,6 +163,19 @@ status open
 
 \backslash
 begin{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+quiza no deberia tener el margen tan asimetrico!
 \end_layout
 
 \end_inset
