@@ -5,8 +5,16 @@
 \textclass beamer
 \begin_preamble
 \usetheme{Dresden}
+
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+
+\usepackage{algorithm,algpseudocode}
 \end_preamble
 \use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
 \maintain_unincluded_children false
 \language spanish
 \language_package default
@@ -71,6 +79,223 @@
 \end_header
 
 \begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\enumeracion}[3][n][x][1]{#2_{#3},\dots,#2_{#1}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\fee}[3][\gamma]{#1:\mathbf{#2}\rightarrow\mathbf{#3}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\funcion}[3][\gamma]{#1:#2\rightarrow#3}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\embedding}[3][\gamma]{#1:\mathbf{#2}\hookrightarrow\mathbf{#3}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\deff}[2][\varphi][\bar{x}]{#1\left(#2\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\sat}[3]{#1\vDash#2\left[#3\right]}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\nsat}[3]{\mathbf{#1}\not\vDash#2\left[#3\right]}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\subuniv}[2]{\left\langle \bar{#1}\right\rangle ^{\mathbf{#2}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\subiso}[1]{\operatorname{sub\, iso}\left(#1\right)}
+{\mathrm{sub\, iso}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\subhom}[1]{\operatorname{sub\, hom}\left(#1\right)}
+{\mathrm{sub\, hom}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\iso}[1]{\operatorname{iso}\left(#1\right)}
+{\mathrm{iso}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\aut}[1]{\operatorname{aut}\left(#1\right)}
+{\mathrm{aut}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\hom}[1]{\operatorname{hom}\left(#1\right)}
+{\mathrm{hom}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\subestr}[1]{\operatorname{\mathbb{S}}\left(#1\right)}
+{\mathrm{\mathbb{S}}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\subestrl}[2]{\operatorname{\mathbb{S}}_{#2}\left(#1\right)}
+{\mathrm{\mathbb{S}}_{#2}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\dominio}[1]{\operatorname{Dom}\left(#1\right)}
+{\mathrm{Dom}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\imagen}[1]{\operatorname{Im}\left(#1\right)}
+{\mathrm{Im}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\partes}[1]{\operatorname{\mathcal{P}}\left(#1\right)}
+{\mathrm{\mathcal{P}}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\bihom}[1]{\operatorname{bi\, hom}\left(#1\right)}
+{\mathrm{bi\, hom}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\grafico}[1]{\operatorname{graph}\left(#1\right)}
+{\mathrm{graph}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\primerorden}[1]{\operatorname{Fo}\left(#1\right)}
+{\mathrm{Fo}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\abiertas}[1]{\operatorname{Op}\left(#1\right)}
+{\mathrm{Op}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\abiertaspositivas}[1]{\operatorname{Op^{+}}\left(#1\right)}
+{\mathrm{Op}^{+}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\existenciales}[1]{\operatorname{E}\left(#1\right)}
+{\mathrm{E}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\existencialespositivas}[1]{\operatorname{E^{+}}\left(#1\right)}
+{\mathrm{E}^{+}\left(#1\right)}
+\end_inset
+
+
+\end_layout
 
 \begin_layout Title
 Algoritmos para decidir definibilidad de relaciones en fragmentos de primer
@@ -173,6 +398,38 @@ Quiza reticulados acotados? Para no tener tantas subestructuras
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+¿Es definible el circulo azul utilizando solo oraciones del tipo 
+\begin_inset Quotes fld
+\end_inset
+
+esta arriba de
+\begin_inset Quotes frd
+\end_inset
+
+ o 
+\begin_inset Quotes fld
+\end_inset
+
+esta abajo de
+\begin_inset Quotes frd
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/poset vasos.svg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Separator
 
 \end_layout
@@ -203,6 +460,109 @@ Primer orden
 
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+La 
+\begin_inset Flex Alert
+status open
+
+\begin_layout Plain Layout
+Lógica de Primer Orden
+\end_layout
+
+\end_inset
+
+ (LPO) es un lenguaje formal que permite expresar propiedades de estructuras
+ matemáticas.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Es el leguaje formal más importante descubierto hasta el día de hoy.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Convierte 
+\series bold
+propiedades
+\series default
+ matemáticas en 
+\series bold
+objetos
+\series default
+ matemáticos.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+La 
+\series bold
+teoría de conjuntos
+\series default
+ puede formularse satisfactoriamente en LPO.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Cuenta con un 
+\series bold
+cálculo deductivo completo
+\series default
+ (Gödel 1930).
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Separator
 
 \end_layout
@@ -246,6 +606,57 @@ las formulas tienen como sujeto a sus variables libres
 
 \end_layout
 
+\begin_deeper
+\begin_layout Definition
+Sean 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ un lenguaje de primer orden y 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ una 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+-estructura.
+ Si 
+\begin_inset Formula $e\in A$
+\end_inset
+
+, diremos que la fórmula 
+\begin_inset Formula $\deff[][y]$
+\end_inset
+
+ 
+\emph on
+define a 
+\begin_inset Formula $e$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+
+\emph default
+ si para todo 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ vale que
+\begin_inset Formula 
+\[
+x=e\iff\mathbf{A}\vDash\varphi\left(x\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Separator
 
 \end_layout
@@ -263,6 +674,51 @@ Problema de definibilidad
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Dados:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ un lenguaje de primer orden finito,
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ una 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+-estructura finita,
+\end_layout
+
+\begin_layout Itemize
+un elemento 
+\begin_inset Formula $e\in A$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+decidir si hay una fórmula de primer orden que define a 
+\begin_inset Formula $e$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
 \begin_layout Separator
 
 \end_layout
@@ -284,6 +740,36 @@ Preservación para un elemento
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Dada una función 
+\begin_inset Formula $\funcion AB$
+\end_inset
+
+ con 
+\begin_inset Formula $e^{A}\in A$
+\end_inset
+
+ y 
+\begin_inset Formula $e^{B}\in B$
+\end_inset
+
+ diremos que preserva 
+\begin_inset Formula $e$
+\end_inset
+
+ si
+\begin_inset Formula 
+\[
+\gamma\left(e^{A}\right)=e^{B}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Separator
 
 \end_layout
@@ -314,6 +800,46 @@ El ejemplo se vuelve un poset en serio
 
 \end_layout
 
+\begin_deeper
+\begin_layout Theorem
+Si 
+\begin_inset Formula $F$
+\end_inset
+
+ es un automorfismo de 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi(y)$
+\end_inset
+
+ es una fórmula, entonces 
+\begin_inset Formula 
+\[
+\mathbf{A}\vDash\varphi\left[a\right]\Longleftrightarrow\mathbf{A}\vDash\varphi\left[F(a)\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Volviendo al ejemplo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "lat2x2.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Separator
 
 \end_layout
@@ -331,6 +857,37 @@ Pero lo interesante es la vuelta
 
 \end_layout
 
+\begin_deeper
+\begin_layout Theorem
+Si 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ es finita y 
+\begin_inset Formula $a$
+\end_inset
+
+ es punto fijo de todo automorfismo, entonces 
+\begin_inset Formula $a$
+\end_inset
+
+ es definible.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Dibujo de A con todos sus automorfismos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Separator
 
 \end_layout
@@ -348,6 +905,127 @@ Definibilidad y preservación de relaciones binarias
 
 \end_layout
 
+\begin_deeper
+\begin_layout Definition
+Sean 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ un lenguaje de primer orden y 
+\begin_inset Formula $\mathcal{K}$
+\end_inset
+
+ una clase de 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+-estructuras.
+ Si 
+\begin_inset Formula $R\in\mathcal{L}$
+\end_inset
+
+ es un símbolo de relación n-ario, diremos que la fórmula 
+\begin_inset Formula $\deff[][\enumeracion]$
+\end_inset
+
+ 
+\emph on
+define a 
+\begin_inset Formula $R$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathcal{K}$
+\end_inset
+
+
+\emph default
+ si para todo 
+\begin_inset Formula $\mathbf{A}\in\mathcal{K}$
+\end_inset
+
+ y todo 
+\begin_inset Formula $\enumeracion[][a]\in A$
+\end_inset
+
+ vale que
+\begin_inset Formula 
+\[
+\left(\enumeracion[][a]\right)\in R^{\mathbf{A}}\iff\mathbf{A}\vDash\varphi\left(\enumeracion[][a]\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Definition
+Sean 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ un lenguaje de primer orden, 
+\begin_inset Formula $R\in\mathcal{L}$
+\end_inset
+
+ un símbolo de relación n-ario y 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+,
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ dos 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+-estructuras.
+ Diremos que una función 
+\begin_inset Formula $\funcion[f]AB$
+\end_inset
+
+ 
+\emph on
+preserva
+\emph default
+ a 
+\begin_inset Formula $R$
+\end_inset
+
+ si para toda tupla 
+\begin_inset Formula $\left(a_{1},\ldots,a_{n}\right)\in A$
+\end_inset
+
+ tenemos que si 
+\begin_inset Formula $\left(a_{1},\ldots,a_{n}\right)\in R^{\mathbf{A}}$
+\end_inset
+
+ implica que 
+\begin_inset Formula $(f(a_{1}),\ldots,f(a_{n}))\in R^{\mathbf{B}}$
+\end_inset
+
+.
+ Es decir, 
+\begin_inset Formula $f$
+\end_inset
+
+ es un homomorfismo de 
+\begin_inset Formula $\left\langle A,R^{\mathbf{A}}\right\rangle $
+\end_inset
+
+ en 
+\begin_inset Formula $\left\langle B,R^{\mathbf{B}}\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Separator
 
 \end_layout
@@ -365,6 +1043,88 @@ Lema semántico de abiertas
 
 \end_layout
 
+\begin_deeper
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+cf.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "Thm. 1"
+key "Campercholi15"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:definibilidad abierta"
+
+\end_inset
+
+Sean 
+\begin_inset Formula $\mathcal{L}\subseteq\mathcal{L}'$
+\end_inset
+
+ lenguajes de primer orden, sea 
+\begin_inset Formula $R\in\mathcal{L}'-\mathcal{L}$
+\end_inset
+
+ un símbolo de relación n-ario.
+ Para una 
+\begin_inset Formula $\mathcal{L}'$
+\end_inset
+
+-estructura 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+, los siguientes son equivalentes:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Hay una fórmula abierta que define a 
+\begin_inset Formula $R$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Para todas 
+\begin_inset Formula $\mathbf{A}_{0}\leq\mathbf{A}_{\mathcal{L}}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbf{A}_{1}\leq\mathbf{A}_{\mathcal{L}}$
+\end_inset
+
+, se tiene que todo isomorfismo 
+\begin_inset Formula $\sigma:\mathbf{A}_{0}\rightarrow\mathbf{A}_{1}$
+\end_inset
+
+ preserva 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Separator
 
 \end_layout
@@ -412,6 +1172,50 @@ Generación
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+A la hora de reducir la complejidad de nuestros algoritmos en la búsqueda
+ de homomorfismos utilizaremos conjuntos reducidos de morfismos, que 
+\emph on
+generan
+\emph default
+ al resto.
+ Dados 
+\begin_inset Formula $\mathcal{F}_{0}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ dos conjuntos de funciones, diremos que 
+\begin_inset Formula $\mathcal{F}_{0}$
+\end_inset
+
+ 
+\emph on
+genera
+\emph default
+ a 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ si para toda 
+\begin_inset Formula $f\in\mathcal{F}$
+\end_inset
+
+ hay 
+\begin_inset Formula $\enumeracion[][f]\in\mathcal{F}_{0}$
+\end_inset
+
+ (posiblemente repetidas) tales que 
+\begin_inset Formula $f=f_{1}\circ\cdots\circ f_{n}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Separator
 
 \end_layout
@@ -433,6 +1237,89 @@ Teorema de construcción de
 
 \end_layout
 
+\begin_deeper
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:construccion de constelacion abierta"
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\mathcal{K}$
+\end_inset
+
+ un conjunto normal de 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+-estructuras donde no hay estructuras isomorfas.
+ Sea 
+\begin_inset Formula $\mathcal{S}\subseteq\subestr{\mathcal{K}}$
+\end_inset
+
+ tal que contiene exactamente un representante por cada tipo de isomorfismo
+ en 
+\begin_inset Formula $\subestr{\mathcal{K}}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\mathcal{F}\subseteq\subiso{\mathcal{K}}$
+\end_inset
+
+ tal que:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+para cada 
+\begin_inset Formula $\mathbf{S}\in\mathcal{S}$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $\aut{\mathbf{S}}\subseteq\mathcal{F}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Enumerate
+para cada 
+\begin_inset Formula $\mathbf{A}\in\mathbb{S}(\mathcal{K})-\mathcal{S}$
+\end_inset
+
+ 
+\shape italic
+hay 
+\begin_inset Formula $\mathbf{A}'\in\mathcal{S}$
+\end_inset
+
+ y 
+\begin_inset Formula $\gamma,\gamma^{-1}\in\mathcal{F}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\gamma:A\rightarrow A'$
+\end_inset
+
+ es un isomorfismo.
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+Entonces 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ genera 
+\begin_inset Formula $\subiso{\mathcal{K}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Separator
 
 \end_layout
@@ -450,6 +1337,1184 @@ Algoritmo en pseudocódigo conceptual
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{algorithmic}[1]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+State{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathcal{S}=\emptyset$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+For{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\in\mathcal{K}$
+\end_inset
+
+, desde la mayor a la menor cardinalidad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $Sub=\left[\mathbf{C}:\mathbf{C}\in\subestr{\mathbf{A}_{\mathcal{L}}},\textnormal{ de la mayor a menor cardinalidad}\right]$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+	
+\backslash
+For{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{B}\in Sub$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(iso,\, ce)=$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Call{
+\end_layout
+
+\end_inset
+
+chequearIsos
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{B},\mathcal{S}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Comment 
+\end_layout
+
+\end_inset
+
+ hay un 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+-iso de 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{S}\in\mathcal{S}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		
+\backslash
+If{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $ce\neq\textnormal{\texttt{Null}}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+			
+\backslash
+State{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Return 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $ce$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Comment 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $ce$
+\end_inset
+
+ es contraejemplo
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		
+\backslash
+EndIf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		
+\backslash
+If{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $iso$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+			
+\backslash
+State{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $Sub=\left[\mathbf{C}:\mathbf{C}\in Sub\textnormal{ tal que }C\nsubseteq B\right]$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lin:abierta-saco-subestructuras"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		
+\backslash
+Else
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+			
+\backslash
+State{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathcal{S}=\mathcal{S}\cup\left\{ \mathbf{B}\right\} $
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+			
+\backslash
+For{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\alpha\in\textrm{Aut}(\mathbf{B}_{\mathcal{L}})$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+				
+\backslash
+If{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\alpha$
+\end_inset
+
+ no preserva 
+\begin_inset Formula $R$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lin:abierta-auto2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+					
+\backslash
+State{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Return 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\alpha$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Comment 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\alpha$
+\end_inset
+
+ es contraejemplo
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+				
+\backslash
+EndIf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+			
+\backslash
+EndFor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		
+\backslash
+EndIf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+	
+\backslash
+EndFor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+EndFor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+State{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Return 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Comment 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $R$
+\end_inset
+
+ es abierta-definible
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Statex
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Function{
+\end_layout
+
+\end_inset
+
+chequearIsos
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{B},\mathcal{S}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+For{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{S}\in\mathcal{S}$
+\end_inset
+
+, con 
+\begin_inset Formula $\left|\mathbf{B}\right|=\left|\mathbf{S}\right|$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+	
+\backslash
+If{
+\end_layout
+
+\end_inset
+
+hay 
+\begin_inset Formula $\funcion[\gamma]{\mathbf{B}}{\mathbf{S}}$
+\end_inset
+
+ 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+-isomorfismo
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		
+\backslash
+If{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\gamma$
+\end_inset
+
+ no es un 
+\begin_inset Formula $\mathcal{L}\cup\left\{ R\right\} $
+\end_inset
+
+-isomorfismo
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+			
+\backslash
+State{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Return 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\textnormal{\texttt{True}},\gamma)$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Comment 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\gamma$
+\end_inset
+
+ es contraejemplo
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		
+\backslash
+Else
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+			
+\backslash
+State{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Return 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\textnormal{\texttt{True}},\textnormal{\texttt{Null}})$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Comment 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\gamma$
+\end_inset
+
+ es iso que preserva
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		
+\backslash
+EndIf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+	
+\backslash
+EndIf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+EndFor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+State{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Return 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\textnormal{\texttt{False}},\textnormal{\texttt{Null}})$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Comment 
+\end_layout
+
+\end_inset
+
+No tiene representante
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+EndFunction
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{algorithmic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Separator
 
 \end_layout
