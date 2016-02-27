@@ -398,28 +398,13 @@ Quiza reticulados acotados? Para no tener tantas subestructuras
 
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-¿Es definible el circulo azul utilizando solo oraciones del tipo 
-\begin_inset Quotes fld
-\end_inset
+\begin_layout Frame
 
-esta arriba de
-\begin_inset Quotes frd
-\end_inset
-
- o 
-\begin_inset Quotes fld
-\end_inset
-
-esta abajo de
-\begin_inset Quotes frd
-\end_inset
-
-?
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
+\align center
 \begin_inset Graphics
 	filename img/poset vasos.svg
 	scale 50
@@ -429,15 +414,105 @@ esta abajo de
 
 \end_layout
 
-\begin_layout Standard
-No lo es ya que cualquier frase que sea cierta sobre el circulo azul tambien
- lo va a ser sobre el verde.
+\begin_layout Pause
+
 \end_layout
 
 \begin_layout Standard
-Esto pasa porque hay un automorfismo que los intercambia entre si, manteniendo
- quienes estan abajo o arriba de quien.
- Reflejarlos en el espejo.
+Restringimos el lenguaje:
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Quotes fld
+\end_inset
+
+esta arriba o a la misma altura que
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Quotes fld
+\end_inset
+
+esta abajo o a la misma altura que
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Lenguaje Natural
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+A pesar de reflejarlo en el espejo se mantiene quien esta abajo o arriba
+ de quien.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename img/poset vasos.svg
+	scale 50
+
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/poset vasos reflejado.svg
+	scale 50
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -501,78 +576,10 @@ pause{}
 \end_layout
 
 \begin_layout Itemize
-Es el leguaje formal más importante descubierto hasta el día de hoy.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-pause{}
+En nuestro caso lo restringimos a formulas abiertas, abiertas positivas,
+ existenciales, existenciales positivas y sin restricciones.
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Convierte 
-\series bold
-propiedades
-\series default
- matemáticas en 
-\series bold
-objetos
-\series default
- matemáticos.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-pause{}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-La 
-\series bold
-teoría de conjuntos
-\series default
- puede formularse satisfactoriamente en LPO.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-pause{}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Cuenta con un 
-\series bold
-cálculo deductivo completo
-\series default
- (Gödel 1930).
-\end_layout
-
-\end_deeper
 \end_deeper
 \begin_layout Separator
 
@@ -849,6 +856,35 @@ Volviendo al ejemplo:
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align left
 \begin_inset CommandInset include
 LatexCommand include
 filename "lat2x2.tex"
@@ -858,9 +894,41 @@ filename "lat2x2.tex"
 
 \end_layout
 
-\begin_layout Standard
-Es claro que hay un automorfismo 
-\begin_inset Formula $\gamma$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "50col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Plain Layout
+Hay 
+\begin_inset Formula $\text{\funcion[\gamma]{\mathbf{A}}{\mathbf{A}}}$
 \end_inset
 
 , tal que 
@@ -868,23 +936,16 @@ Es claro que hay un automorfismo
 \end_inset
 
 .
- Por lo que toda formula satisfecha por 
-\begin_inset Formula $2$
-\end_inset
-
-, satisface 
-\begin_inset Formula $3$
-\end_inset
-
-.
 \end_layout
 
-\begin_layout Standard
-Por lo que nunca podría haber una formula que solo sea satisfecha por 
-\begin_inset Formula $2$
 \end_inset
 
-.
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -912,11 +973,11 @@ Si
 \end_inset
 
  es finita y 
-\begin_inset Formula $a$
+\begin_inset Formula $e$
 \end_inset
 
  es punto fijo de todo automorfismo, entonces 
-\begin_inset Formula $a$
+\begin_inset Formula $e$
 \end_inset
 
  es definible.
@@ -955,25 +1016,25 @@ Definibilidad y preservación de relaciones binarias
 
 \begin_deeper
 \begin_layout Definition
-Sean 
+Sea 
 \begin_inset Formula $\mathcal{L}$
 \end_inset
 
  un lenguaje de primer orden y 
-\begin_inset Formula $\mathcal{K}$
+\begin_inset Formula $\mathbf{A}$
 \end_inset
 
- una clase de 
+ una 
 \begin_inset Formula $\mathcal{L}$
 \end_inset
 
--estructuras.
+-estructura.
  Si 
-\begin_inset Formula $R\in\mathcal{L}$
+\begin_inset Formula $R\subseteq A^{2}$
 \end_inset
 
- es un símbolo de relación n-ario, diremos que la fórmula 
-\begin_inset Formula $\deff[][\enumeracion]$
+ es una relación binaria, diremos que la fórmula 
+\begin_inset Formula $\deff[][x_{1},x_{2}]$
 \end_inset
 
  
@@ -983,23 +1044,19 @@ define a
 \end_inset
 
  en 
-\begin_inset Formula $\mathcal{K}$
+\begin_inset Formula $\mathbf{A}$
 \end_inset
 
 
 \emph default
  si para todo 
-\begin_inset Formula $\mathbf{A}\in\mathcal{K}$
-\end_inset
-
- y todo 
-\begin_inset Formula $\enumeracion[][a]\in A$
+\begin_inset Formula $a_{1},a_{2}\in A$
 \end_inset
 
  vale que
 \begin_inset Formula 
 \[
-\left(\enumeracion[][a]\right)\in R^{\mathbf{A}}\iff\mathbf{A}\vDash\varphi\left(\enumeracion[][a]\right).
+\left(a_{1},a_{2}\right)\in R\iff\mathbf{A}\vDash\varphi\left(a_{1},a_{2}\right).
 \]
 
 \end_inset
@@ -1007,12 +1064,12 @@ define a
 
 \end_layout
 
-\begin_layout Separator
+\begin_layout Pause
 
 \end_layout
 
 \begin_layout Definition
-Sean 
+Sea 
 \begin_inset Formula $\mathcal{L}$
 \end_inset
 
@@ -1020,7 +1077,7 @@ Sean
 \begin_inset Formula $R\in\mathcal{L}$
 \end_inset
 
- un símbolo de relación n-ario y 
+ un símbolo de relación binario y 
 \begin_inset Formula $\mathbf{A}$
 \end_inset
 
@@ -1046,15 +1103,15 @@ preserva
 \end_inset
 
  si para toda tupla 
-\begin_inset Formula $\left(a_{1},\ldots,a_{n}\right)\in A$
+\begin_inset Formula $\left(a_{1},a_{2}\right)\in A$
 \end_inset
 
  tenemos que si 
-\begin_inset Formula $\left(a_{1},\ldots,a_{n}\right)\in R^{\mathbf{A}}$
+\begin_inset Formula $\left(a_{1},a_{2}\right)\in R^{\mathbf{A}}$
 \end_inset
 
  implica que 
-\begin_inset Formula $(f(a_{1}),\ldots,f(a_{n}))\in R^{\mathbf{B}}$
+\begin_inset Formula $(f(a_{1}),f(a_{2}))\in R^{\mathbf{B}}$
 \end_inset
 
 .
@@ -1083,7 +1140,7 @@ preserva
 status open
 
 \begin_layout Plain Layout
-Lema semántico de abiertas
+Teorema semántico de primer orden
 \end_layout
 
 \end_inset
@@ -1093,25 +1150,112 @@ Lema semántico de abiertas
 
 \begin_deeper
 \begin_layout Theorem
-\begin_inset Argument 1
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:definibiliad de primer orden"
+
+\end_inset
+
+Sean 
+\begin_inset Formula $\mathcal{L}\subseteq\mathcal{L}'$
+\end_inset
+
+ lenguajes de primer orden, sea 
+\begin_inset Formula $R\in\mathcal{L}'-\mathcal{L}$
+\end_inset
+
+ un símbolo de relación binaria.
+ Para una 
+\begin_inset Formula $\mathcal{L}'$
+\end_inset
+
+-estructura 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+, los siguientes son equivalentes:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Hay una 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+-fórmula que define 
+\begin_inset Formula $R$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Todo automorfismo 
+\begin_inset Formula $\gamma:\mathbf{A}_{\mathcal{L}}\rightarrow\mathbf{A}_{\mathcal{L}}$
+\end_inset
+
+ preserva 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Section
+Algoritmos de Definibilidad
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-cf.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-after "Thm. 1"
-key "Campercholi15"
+Mas generacion que algoritmos
+\end_layout
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Los representantes modulo isomorfismo
+\end_layout
+
 \end_inset
 
 
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Teorema semántico para abiertas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Theorem
 \begin_inset CommandInset label
 LatexCommand label
 name "thm:definibilidad abierta"
@@ -1126,7 +1270,7 @@ Sean
 \begin_inset Formula $R\in\mathcal{L}'-\mathcal{L}$
 \end_inset
 
- un símbolo de relación n-ario.
+ un símbolo de relación binaria.
  Para una 
 \begin_inset Formula $\mathcal{L}'$
 \end_inset
@@ -1174,36 +1318,6 @@ Para todas
 \end_deeper
 \end_deeper
 \begin_layout Separator
-
-\end_layout
-
-\begin_layout Section
-Algoritmos de Definibilidad
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Mas generacion que algoritmos
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Los representantes modulo isomorfismo
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
