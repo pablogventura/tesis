@@ -429,6 +429,17 @@ esta abajo de
 
 \end_layout
 
+\begin_layout Standard
+No lo es ya que cualquier frase que sea cierta sobre el circulo azul tambien
+ lo va a ser sobre el verde.
+\end_layout
+
+\begin_layout Standard
+Esto pasa porque hay un automorfismo que los intercambia entre si, manteniendo
+ quienes estan abajo o arriba de quien.
+ Reflejarlos en el espejo.
+\end_layout
+
 \end_deeper
 \begin_layout Separator
 
@@ -830,6 +841,14 @@ Volviendo al ejemplo:
 \end_layout
 
 \begin_layout Standard
+¿Es definible el elemento 
+\begin_inset Formula $2$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "lat2x2.tex"
@@ -837,6 +856,35 @@ filename "lat2x2.tex"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Es claro que hay un automorfismo 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, tal que 
+\begin_inset Formula $\gamma\left(2\right)=3$
+\end_inset
+
+.
+ Por lo que toda formula satisfecha por 
+\begin_inset Formula $2$
+\end_inset
+
+, satisface 
+\begin_inset Formula $3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Por lo que nunca podría haber una formula que solo sea satisfecha por 
+\begin_inset Formula $2$
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
