@@ -10,6 +10,7 @@
 \usetikzlibrary{arrows}
 
 \usepackage{algorithm,algpseudocode}
+\renewcommand{\ALG@beginalgorithmic}{\footnotesize}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -1316,6 +1317,21 @@ Para todas
 \end_layout
 
 \end_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename img/categoria abierta.svg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Separator
 
@@ -1336,13 +1352,7 @@ Generación
 
 \begin_deeper
 \begin_layout Standard
-A la hora de reducir la complejidad de nuestros algoritmos en la búsqueda
- de homomorfismos utilizaremos conjuntos reducidos de morfismos, que 
-\emph on
-generan
-\emph default
- al resto.
- Dados 
+Dados 
 \begin_inset Formula $\mathcal{F}_{0}$
 \end_inset
 
@@ -1356,7 +1366,19 @@ generan
 
  
 \emph on
+
+\begin_inset Flex Alert
+status open
+
+\begin_layout Plain Layout
+
+\emph on
 genera
+\end_layout
+
+\end_inset
+
+
 \emph default
  a 
 \begin_inset Formula $\mathcal{F}$
@@ -1375,6 +1397,18 @@ genera
 \end_inset
 
 .
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+Notar que la composición de funciones que preservan, preserva.
 \end_layout
 
 \end_deeper
@@ -1387,11 +1421,7 @@ genera
 status open
 
 \begin_layout Plain Layout
-Teorema de construcción de 
-\begin_inset Formula $\mathcal{F}$
-\end_inset
-
-
+Teorema de generación para abiertas
 \end_layout
 
 \end_inset
@@ -1408,26 +1438,26 @@ name "thm:construccion de constelacion abierta"
 \end_inset
 
 Sea 
-\begin_inset Formula $\mathcal{K}$
+\begin_inset Formula $\mathbf{A}$
 \end_inset
 
- un conjunto normal de 
+ una 
 \begin_inset Formula $\mathcal{L}$
 \end_inset
 
--estructuras donde no hay estructuras isomorfas.
+-estructura.
  Sea 
-\begin_inset Formula $\mathcal{S}\subseteq\subestr{\mathcal{K}}$
+\begin_inset Formula $\mathcal{S}\subseteq\subestr{\mathbf{A}}$
 \end_inset
 
  tal que contiene exactamente un representante por cada tipo de isomorfismo
  en 
-\begin_inset Formula $\subestr{\mathcal{K}}$
+\begin_inset Formula $\subestr{\mathbf{A}}$
 \end_inset
 
 .
  Sea 
-\begin_inset Formula $\mathcal{F}\subseteq\subiso{\mathcal{K}}$
+\begin_inset Formula $\mathcal{F}\subseteq\left\{ \gamma:\,\text{\funcion[\gamma]{\mathbf{A}_{0}}{\mathbf{A}_{1}}}\mbox{ isomorfismo con }\mathbf{A}_{0}\leq\mathbf{A}\mbox{ y }\mathbf{A}_{1}\leq\mathbf{A}\right\} $
 \end_inset
 
  tal que:
@@ -1448,7 +1478,7 @@ para cada
 
 \begin_layout Enumerate
 para cada 
-\begin_inset Formula $\mathbf{A}\in\mathbb{S}(\mathcal{K})-\mathcal{S}$
+\begin_inset Formula $\mathbf{A}\in\mathbb{S}(\mathbf{A})-\mathcal{S}$
 \end_inset
 
  
@@ -1474,8 +1504,8 @@ Entonces
 \begin_inset Formula $\mathcal{F}$
 \end_inset
 
- genera 
-\begin_inset Formula $\subiso{\mathcal{K}}$
+ genera a 
+\begin_inset Formula $\left\{ \gamma:\,\text{\funcion[\gamma]{\mathbf{A}_{0}}{\mathbf{A}_{1}}}\mbox{ isomorfismo con }\mathbf{A}_{0}\leq\mathbf{A}\mbox{ y }\mathbf{A}_{1}\leq\mathbf{A}\right\} $
 \end_inset
 
 .
@@ -1491,7 +1521,7 @@ Entonces
 status open
 
 \begin_layout Plain Layout
-Algoritmo en pseudocódigo conceptual
+Algoritmo para definibilidad abierta
 \end_layout
 
 \end_inset
@@ -1555,37 +1585,6 @@ status open
 
 
 \backslash
-For{
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula $\mathbf{A}\in\mathcal{K}$
-\end_inset
-
-, desde la mayor a la menor cardinalidad
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-	
-\backslash
 State{
 \end_layout
 
@@ -1615,7 +1614,7 @@ status open
 
 \begin_layout Plain Layout
 
-	
+
 \backslash
 For{
 \end_layout
@@ -1646,78 +1645,22 @@ status open
 
 \begin_layout Plain Layout
 
-		
+	
 \backslash
-State{
+If{
 \end_layout
 
 \end_inset
 
-
-\begin_inset Formula $(iso,\, ce)=$
-\end_inset
-
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-Call{
-\end_layout
-
-\end_inset
-
-chequearIsos
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}{
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula $\mathbf{B},\mathcal{S}$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-Comment 
-\end_layout
-
-\end_inset
-
- hay un 
+ hay 
 \begin_inset Formula $\mathcal{L}$
 \end_inset
 
--iso de 
-\begin_inset Formula $\mathbf{B}$
+-isomorfismo 
+\begin_inset Formula $\funcion[\gamma]{\mathbf{B}}{\mathbf{S}}$
 \end_inset
 
- en 
+ con 
 \begin_inset Formula $\mathbf{S}\in\mathcal{S}$
 \end_inset
 
@@ -1749,7 +1692,11 @@ If{
 \end_inset
 
 
-\begin_inset Formula $ce\neq\textnormal{\texttt{Null}}$
+\begin_inset Formula $\gamma$
+\end_inset
+
+ no preserva 
+\begin_inset Formula $R$
 \end_inset
 
 
@@ -1793,7 +1740,7 @@ Return
 \end_inset
 
 
-\begin_inset Formula $ce$
+\begin_inset Formula $\gamma$
 \end_inset
 
  
@@ -1810,7 +1757,7 @@ Comment
 \end_inset
 
  
-\begin_inset Formula $ce$
+\begin_inset Formula $\gamma$
 \end_inset
 
  es contraejemplo
@@ -1851,37 +1798,6 @@ status open
 
 		
 \backslash
-If{
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula $iso$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-			
-\backslash
 State{
 \end_layout
 
@@ -1903,13 +1819,6 @@ status open
 \end_inset
 
 
-\begin_inset CommandInset label
-LatexCommand label
-name "lin:abierta-saco-subestructuras"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1918,7 +1827,7 @@ status open
 
 \begin_layout Plain Layout
 
-		
+	
 \backslash
 Else
 \end_layout
@@ -1934,7 +1843,7 @@ status open
 
 \begin_layout Plain Layout
 
-			
+		
 \backslash
 State{
 \end_layout
@@ -1965,7 +1874,7 @@ status open
 
 \begin_layout Plain Layout
 
-			
+		
 \backslash
 For{
 \end_layout
@@ -1996,7 +1905,7 @@ status open
 
 \begin_layout Plain Layout
 
-				
+			
 \backslash
 If{
 \end_layout
@@ -2038,7 +1947,7 @@ status open
 
 \begin_layout Plain Layout
 
-					
+				
 \backslash
 State{
 \end_layout
@@ -2099,25 +2008,9 @@ status open
 
 \begin_layout Plain Layout
 
-				
-\backslash
-EndIf
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
 			
 \backslash
-EndFor
+EndIf
 \end_layout
 
 \end_inset
@@ -2133,7 +2026,7 @@ status open
 
 		
 \backslash
-EndIf
+EndFor
 \end_layout
 
 \end_inset
@@ -2149,7 +2042,7 @@ status open
 
 	
 \backslash
-EndFor
+EndIf
 \end_layout
 
 \end_inset
@@ -2223,436 +2116,6 @@ status open
 \begin_layout Plain Layout
 
 }
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-Statex
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-Function{
-\end_layout
-
-\end_inset
-
-chequearIsos
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}{
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula $\mathbf{B},\mathcal{S}$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-For{
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula $\mathbf{S}\in\mathcal{S}$
-\end_inset
-
-, con 
-\begin_inset Formula $\left|\mathbf{B}\right|=\left|\mathbf{S}\right|$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-	
-\backslash
-If{
-\end_layout
-
-\end_inset
-
-hay 
-\begin_inset Formula $\funcion[\gamma]{\mathbf{B}}{\mathbf{S}}$
-\end_inset
-
- 
-\begin_inset Formula $\mathcal{L}$
-\end_inset
-
--isomorfismo
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-		
-\backslash
-If{
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula $\gamma$
-\end_inset
-
- no es un 
-\begin_inset Formula $\mathcal{L}\cup\left\{ R\right\} $
-\end_inset
-
--isomorfismo
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-			
-\backslash
-State{
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-Return 
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula $(\textnormal{\texttt{True}},\gamma)$
-\end_inset
-
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-Comment 
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula $\gamma$
-\end_inset
-
- es contraejemplo
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-		
-\backslash
-Else
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-			
-\backslash
-State{
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-Return 
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula $(\textnormal{\texttt{True}},\textnormal{\texttt{Null}})$
-\end_inset
-
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-Comment 
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula $\gamma$
-\end_inset
-
- es iso que preserva
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-		
-\backslash
-EndIf
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-	
-\backslash
-EndIf
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-EndFor
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-State{
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-Return 
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula $(\textnormal{\texttt{False}},\textnormal{\texttt{Null}})$
-\end_inset
-
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-Comment 
-\end_layout
-
-\end_inset
-
-No tiene representante
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-EndFunction
 \end_layout
 
 \end_inset
