@@ -1317,21 +1317,6 @@ Para todas
 \end_layout
 
 \end_deeper
-\begin_layout Pause
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename img/categoria abierta.svg
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
 \end_deeper
 \begin_layout Separator
 
@@ -2217,6 +2202,69 @@ Escencialmente es decir que se revisan los homomorfismos
 
 \end_layout
 
+\begin_deeper
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:definibilidad abierta positiva"
+
+\end_inset
+
+Sean 
+\begin_inset Formula $\mathcal{L}\subseteq\mathcal{L}'$
+\end_inset
+
+ lenguajes de primer orden, sea 
+\begin_inset Formula $R\in\mathcal{L}'-\mathcal{L}$
+\end_inset
+
+ un símbolo de relación binaria.
+ Para una 
+\begin_inset Formula $\mathcal{L}'$
+\end_inset
+
+-estructura 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+, los siguientes son equivalentes:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Hay una fórmula abierta positiva que define a 
+\begin_inset Formula $R$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Para todas 
+\begin_inset Formula $\mathbf{A}_{0}\leq\mathbf{A}_{\mathcal{L}}$
+\end_inset
+
+,
+\begin_inset Formula $\mathbf{B}_{0}\leq\mathbf{B}_{\mathcal{L}}$
+\end_inset
+
+, se tiene que todo homomorfismo 
+\begin_inset Formula $h:\mathbf{A}_{0}\rightarrow\mathbf{B}_{0}$
+\end_inset
+
+ preserva 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Separator
 
 \end_layout
@@ -2226,7 +2274,7 @@ Escencialmente es decir que se revisan los homomorfismos
 status open
 
 \begin_layout Plain Layout
-Modificaciones al algoritmo para esto
+Teorema de generacion de abiertas positivas
 \end_layout
 
 \end_inset
@@ -2234,6 +2282,89 @@ Modificaciones al algoritmo para esto
 
 \end_layout
 
+\begin_deeper
+\begin_layout Theorem
+Sea 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ una 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+-estructura.
+ Sea 
+\begin_inset Formula $\mathcal{S}\subseteq\subestr{\mathbf{A}}$
+\end_inset
+
+ tal que contiene exactamente un representante por cada tipo de isomorfismo
+ en 
+\begin_inset Formula $\subestr{\mathbf{A}}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\mathcal{H}\subseteq\left\{ \gamma:\,\text{\funcion[\gamma]{\mathbf{A}_{0}}{\mathbf{A}_{1}}}\mbox{ homomorfismo con }\mathbf{A}_{0}\leq\mathbf{A}\mbox{ y }\mathbf{A}_{1}\leq\mathbf{A}\right\} $
+\end_inset
+
+ tal que:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mathcal{F}\subseteq\mathcal{H}$
+\end_inset
+
+ con 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ como en el Teorema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:construccion de constelacion abierta"
+
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Itemize
+para cada 
+\begin_inset Formula $\mathbf{A},\mathbf{B}\in\mathcal{S}$
+\end_inset
+
+ 
+\shape italic
+todo 
+\begin_inset Formula $\funcion[h]{\mathbf{A}}{\mathbf{B}}$
+\end_inset
+
+ homomorfismo sobreyectivo está en 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Theorem
+Entonces 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ genera 
+\begin_inset Formula $\left\{ \gamma:\,\text{\funcion[\gamma]{\mathbf{A}_{0}}{\mathbf{A}_{1}}}\mbox{ homomorfismo con }\mathbf{A}_{0}\leq\mathbf{A}\mbox{ y }\mathbf{A}_{1}\leq\mathbf{A}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+
+\end_layout
+
+\end_deeper
 \begin_layout Separator
 
 \end_layout
@@ -2243,7 +2374,7 @@ Modificaciones al algoritmo para esto
 status open
 
 \begin_layout Plain Layout
-Uso de Cantor-Bernstein
+Cantor-Bernstein
 \end_layout
 
 \end_inset
@@ -2251,6 +2382,195 @@ Uso de Cantor-Bernstein
 
 \end_layout
 
+\begin_deeper
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Las estructuras finitas cumplen la propiedad de Cantor-Bernstein
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:cantor-bernstein"
+
+\end_inset
+
+Dadas 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ estructuras finitas, si hay 
+\begin_inset Formula $f:A\rightarrow B$
+\end_inset
+
+ y 
+\begin_inset Formula $g:B\rightarrow A$
+\end_inset
+
+ homomorfismos inyectivos entonces hay un 
+\begin_inset Formula $\funcion[\gamma]{\mathbf{A}}{\mathbf{B}}$
+\end_inset
+
+ isomorfismo.
+\end_layout
+
+\begin_layout Theorem
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Algoritmo para abiertas positivas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Modificamos el algoritmo para definibilidad abierta.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+Recorrer los 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+-homomorfismos biyectivos entre 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ y cada 
+\begin_inset Formula $\mathbf{S}\in\mathcal{S}$
+\end_inset
+
+, hay tres casos:
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+No hay 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+-homomorfismos biyectivos.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Hay que revisar homomorfismos biyectivos de 
+\begin_inset Formula $\mathbf{S}$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Hay 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+-homomorfismos biyectivos pero ninguno es un isomorfismo.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Los revisamos por preservacion.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Hay un 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+-isomorfimo.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Lo revisamos por preservacion igual que en el algoritmo para definibilidad
+ abierta.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Algoritmo para abiertas positivas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Al final ya han sido revisados todos los homomorfismos biyectivos entre
+ estructuras de 
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Solo falta revisar los homomorfismos sobreyectivos, no inyectivos entre
+ las estructuras de 
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Separator
 
 \end_layout
@@ -2272,72 +2592,59 @@ status open
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Álgebra de relaciones definibles en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+La colección de relaciones 
+\begin_inset Formula $n$
+\end_inset
+
+-arias definibles en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ es cerrada bajo uniones e intersecciones.
+\end_layout
+
+\begin_layout Standard
+Ademas es cerrada bajo complementación para formulas abiertas y formulas
+ sin restricciones.
+\end_layout
+
+\begin_layout Standard
+Llamaremos 
+\emph on
+Álgebra de Lindenbaum
+\emph default
+ (de relaciones 
+\begin_inset Formula $n$
+\end_inset
+
+-arias definibles por 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+) al reticulado distributivo (o álgebra de Boole) resultante.
+\end_layout
+
+\end_deeper
 \begin_layout Frame
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
 union y interseccion...
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Separator
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Join-irreducibles
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Definicion y que son los uno generados
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Separator
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Teorema de representación de Birkhoff
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Basta con los uno generados
 \end_layout
 
 \end_inset
@@ -2375,6 +2682,65 @@ Escencialmente se revisan los endomorfismos
 
 \end_layout
 
+\begin_deeper
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:definibilidad existencial positiva"
+
+\end_inset
+
+Sean 
+\begin_inset Formula $\mathcal{L}\subseteq\mathcal{L}'$
+\end_inset
+
+ lenguajes de primer orden, sea 
+\begin_inset Formula $R\in\mathcal{L}'-\mathcal{L}$
+\end_inset
+
+ un símbolo de relación binaria.
+ Para una 
+\begin_inset Formula $\mathcal{L}'$
+\end_inset
+
+-estructura 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+, los siguientes son equivalentes:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Hay una 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+-fórmula existencial positiva que define 
+\begin_inset Formula $R$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Todo endomorfismo 
+\begin_inset Formula $\gamma:\mathbf{A}_{\mathcal{L}}\rightarrow\mathbf{A}_{\mathcal{L}}$
+\end_inset
+
+ preserva 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Separator
 
 \end_layout
@@ -2384,7 +2750,109 @@ Escencialmente se revisan los endomorfismos
 status open
 
 \begin_layout Plain Layout
-Modificaciones a los algoritmos
+Join-irreducibles
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Definicion y que son los uno generados
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Un elemento es join-irreducible si no puede ser expresado como supremo de
+ otros elementos.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Lemma
+Una relación 
+\begin_inset Formula $r\subseteq A^{n}$
+\end_inset
+
+ es join-irreducible en el álgebra de Lindenbaum de relaciones n-arias definible
+s por existenciales positivas sii hay 
+\begin_inset Formula $\bar{a}\in A^{n}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $r=\{h(\bar{a}):h\in\mbox{Endomorfismos}\left(\mathbf{A}\right)\}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Teorema de representación de Birkhoff
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Teorema de representación de Birkhoff
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:representacion de birkhoff, reticulados"
+
+\end_inset
+
+ Todo reticulado distributivo finito 
+\begin_inset Formula $\mathbf{L}$
+\end_inset
+
+ es isomorfo al reticulado de conjuntos descendientes del poset de elementos
+ join-irreducibles en 
+\begin_inset Formula $\mathbf{L}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Basta con los uno generados
 \end_layout
 
 \end_inset
@@ -2401,7 +2869,49 @@ Modificaciones a los algoritmos
 status open
 
 \begin_layout Plain Layout
-Ejecución en vivo reticulados distributivos
+Generación del álgebra de Lindenbaum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Basta con recopilar los morfismos que los algoritmos para chequeo de definibilid
+ad hubieran chequeado por preservación.
+ En particular los endomorfismos para existenciales positivas.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Luego basta con saturar a cada 
+\begin_inset Formula $\bar{a}\in A^{n}$
+\end_inset
+
+ por ese conjunto de morfismos para obtener cada elemento join-irreducible.
+ En particular 
+\begin_inset Formula $\{h(\bar{a}):h\in\mbox{Endomorfismos}\left(\mathbf{A}\right)\}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Ejecución para reticulados distributivos
 \end_layout
 
 \end_inset
@@ -2422,6 +2932,184 @@ De nuevo, esquemas mas claros sobre la salida del programa
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+
+\family typewriter
+\size scriptsize
+lat3x3 = LatticePoset([[2,3],[],[4,5],[5,6],[7],[7,8],[8],[1],[1]])
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\size scriptsize
+lat3x3 = definability.sage_to.sage_lattice_to_model(lat3x3)
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+ 
+\backslash
+clip(-4.7,-2.49) rectangle (5.16,2.6); 
+\backslash
+draw (-2,0)-- (-1,1); 
+\backslash
+draw (-1,1)-- (0,2); 
+\backslash
+draw (0,2)-- (1,1); 
+\backslash
+draw (1,1)-- (2,0); 
+\backslash
+draw (2,0)-- (1,-1); 
+\backslash
+draw (1,-1)-- (0,-2); 
+\backslash
+draw (0,-2)-- (-1,-1); 
+\backslash
+draw (-1,-1)-- (-2,0); 
+\backslash
+draw (-1,1)-- (0,0); 
+\backslash
+draw (0,0)-- (1,-1); 
+\backslash
+draw (1,1)-- (0,0); 
+\backslash
+draw (0,0)-- (-1,-1); 
+\backslash
+begin{scriptsize} 
+\backslash
+fill [color=black] (0,0) circle (1.5pt); 
+\backslash
+draw[color=black] (0.01,0.28) node {5}; 
+\backslash
+fill [color=black] (1,1) circle (1.5pt); 
+\backslash
+draw[color=black] (1.17,1.2) node {8}; 
+\backslash
+fill [color=black] (-1,1) circle (1.5pt); 
+\backslash
+draw[color=black] (-1.2,1.22) node {7}; 
+\backslash
+fill [color=black] (0,2) circle (1.5pt); 
+\backslash
+draw[color=black] (0.01,2.26) node {1}; 
+\backslash
+fill [color=black] (0,-2) circle (1.5pt); 
+\backslash
+draw[color=black] (0,-2.27) node {0}; 
+\backslash
+fill [color=black] (-1,-1) circle (1.5pt); 
+\backslash
+draw[color=black] (-1.18,-1.18) node {2}; 
+\backslash
+fill [color=black] (1,-1) circle (1.5pt); 
+\backslash
+draw[color=black] (1.21,-1.2) node {3}; 
+\backslash
+fill [color=black] (2,0) circle (1.5pt); 
+\backslash
+draw[color=black] (2.28,0.03) node {6}; 
+\backslash
+fill [color=black] (-2,0) circle (1.5pt); 
+\backslash
+draw[color=black] (-2.27,0.03) node {4}; 
+\backslash
+end{scriptsize} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Interpretación de la salida
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+De nuevo, esquemas mas claros sobre la salida del programa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\Delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\leq$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\geq$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
 \begin_layout Separator
 
 \end_layout
@@ -2439,6 +3127,72 @@ Nuestro teorema de reticulados distributivos
 
 \end_layout
 
+\begin_deeper
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:Caracterizacion de las relaciones binarias definibles por existenciales positivas en reticulados distributivos"
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\mathbf{L}$
+\end_inset
+
+ un reticulado distributivo y 
+\begin_inset Formula $R$
+\end_inset
+
+ una relación binaria sobre 
+\begin_inset Formula $L$
+\end_inset
+
+ definible por un fórmula existencial positiva en 
+\begin_inset Formula $\mathbf{L}$
+\end_inset
+
+.
+ Se da una de las siguientes:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $R=\Delta$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R=\{(x,y):x\leq y\}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R=\{(x,y):x\geq y\}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R=\{(x,y):x\leq y\}\cup\{(x,y):x\geq y\}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R=L\times L$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Separator
 
 \end_layout
@@ -2465,7 +3219,7 @@ Mas esquematica y conceptual
 status open
 
 \begin_layout Plain Layout
-Conclusiones
+Aportes
 \end_layout
 
 \end_inset
@@ -2473,6 +3227,61 @@ Conclusiones
 
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\size small
+Se probaron resultados para la construcción de un conjunto generador del
+ conjunto de morfismos a revisar para definibilidad abierta y definibilidad
+ abierta positiva.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Se desarrollaron algoritmos para decidir definibilidad de relaciones en
+ primer orden, en fórmulas abiertas, abiertas positivas, existenciales y
+ existenciales positivas.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Se desarrollaron los respectivos algoritmos para obtener el álgebra de relacione
+s definibles en cada fragmento de primer orden.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Se desarrolló una herramienta que implementa dichos algoritmos.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Al probar la herramienta, se conjeturó y luego se probó una caracterización
+ de las relaciones binarias definibles por existenciales positivas en reticulado
+s distributivos.
+\end_layout
+
+\end_deeper
 \begin_layout Separator
 
 \end_layout
@@ -2490,6 +3299,74 @@ Trabajo Futuro
 
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Algoritmos para decidir definibilidad por conjunción de atómicas y por primitiva
+s positivas.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Explorar y aprovechar en la implementación, la interacción entre los diferentes
+ tipos de definibilidad.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+También esperamos explorar mejores implementaciones para la generación de
+ subestructuras, por ejemplo estudiando los algoritmos utilizados por el
+ Universal Álgebra Calculator.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Esperamos también continuar el estudio de la definibilidad existencial positiva
+ en reticulados distributivos, investigando los casos de mayor aridad.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size larger
+¿Preguntas?
+\end_layout
+
+\end_deeper
 \begin_layout Separator
 
 \end_layout
