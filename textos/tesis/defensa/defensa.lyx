@@ -2155,6 +2155,131 @@ Esquema mas claro sobre la salida del programa
 
 \end_layout
 
+\begin_layout Frame
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+ 
+\backslash
+clip(-2.53,-1.52) rectangle (2.51,1.52); 
+\backslash
+draw (0,1)-- (0,0); 
+\backslash
+draw (0,0)-- (0,-1); 
+\backslash
+draw (-1,0)-- (0,-1); 
+\backslash
+draw (-1,0)-- (0,1); 
+\backslash
+draw (0,1)-- (1,0); 
+\backslash
+draw (1,0)-- (0,-1); 
+\backslash
+begin{scriptsize} 
+\backslash
+fill [color=black] (0,0) circle (1.5pt); 
+\backslash
+draw[color=black] (0.27,0.02) node {3}; 
+\backslash
+fill [color=black] (0,1) circle (1.5pt); 
+\backslash
+draw[color=black] (0.01,1.28) node {1}; 
+\backslash
+fill [color=black] (-1,0) circle (1.5pt); 
+\backslash
+draw[color=black] (-1.29,0.03) node {2}; 
+\backslash
+fill [color=black] (1,0) circle (1.5pt); 
+\backslash
+draw[color=black] (1.27,0.03) node {4}; 
+\backslash
+fill [color=black] (0,-1) circle (1.5pt); 
+\backslash
+draw[color=black] (0,-1.28) node {0}; 
+\backslash
+end{scriptsize} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "55col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $R=\left\{ \left(x,y\right):\mbox{ tanto }x\textnormal{ como }y\textnormal{ estan al medio del diagrama}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $R=\left\{ \left(1,1\right),\left(1,3\right),\left(1,0\right),\left(3,1\right),\left(3,3\right),\left(3,0\right),\left(0,1\right),\left(0,3\right),\left(0,0\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Separator
 
 \end_layout
