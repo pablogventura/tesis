@@ -488,8 +488,8 @@ Lenguaje Natural
 \end_layout
 
 \begin_layout Frame
-A pesar de reflejarlo en el espejo se mantiene quien esta abajo o arriba
- de quien.
+A pesar de reflejarlo en espejo se mantiene quien esta abajo o arriba de
+ quien.
 \end_layout
 
 \begin_deeper
@@ -641,17 +641,17 @@ Sean
 
 -estructura.
  Si 
-\begin_inset Formula $e\in A$
+\begin_inset Formula $a\in A$
 \end_inset
 
 , diremos que la fórmula 
-\begin_inset Formula $\deff[][y]$
+\begin_inset Formula $\deff[][x]$
 \end_inset
 
  
 \emph on
 define a 
-\begin_inset Formula $e$
+\begin_inset Formula $a$
 \end_inset
 
  en 
@@ -680,68 +680,6 @@ x=e\iff\mathbf{A}\vDash\varphi\left(x\right).
 
 \end_layout
 
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Problema de definibilidad
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-Dados:
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\mathcal{L}$
-\end_inset
-
- un lenguaje de primer orden finito,
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
- una 
-\begin_inset Formula $\mathcal{L}$
-\end_inset
-
--estructura finita,
-\end_layout
-
-\begin_layout Itemize
-un elemento 
-\begin_inset Formula $e\in A$
-\end_inset
-
-,
-\end_layout
-
-\begin_layout Standard
-decidir si hay una fórmula de primer orden que define a 
-\begin_inset Formula $e$
-\end_inset
-
- en 
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
-.
- 
-\end_layout
-
-\end_deeper
-\begin_layout Separator
-
-\end_layout
-
 \begin_layout Section
 Preliminares teóricos
 \end_layout
@@ -751,54 +689,7 @@ Preliminares teóricos
 status open
 
 \begin_layout Plain Layout
-Preservación para un elemento
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-Dada una función 
-\begin_inset Formula $\funcion AB$
-\end_inset
-
- con 
-\begin_inset Formula $e^{A}\in A$
-\end_inset
-
- y 
-\begin_inset Formula $e^{B}\in B$
-\end_inset
-
- diremos que preserva 
-\begin_inset Formula $e$
-\end_inset
-
- si
-\begin_inset Formula 
-\[
-\gamma\left(e^{A}\right)=e^{B}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Separator
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Uso preservación para refutar definibilidad
+Preservación para refutar definibilidad
 \end_layout
 
 \end_inset
@@ -1017,24 +908,16 @@ Definibilidad y preservación de relaciones binarias
 
 \begin_deeper
 \begin_layout Definition
-Sea 
-\begin_inset Formula $\mathcal{L}$
-\end_inset
-
- un lenguaje de primer orden y 
+Sean 
 \begin_inset Formula $\mathbf{A}$
 \end_inset
 
- una 
-\begin_inset Formula $\mathcal{L}$
+ una estructura y 
+\begin_inset Formula $R\subseteq A\times A$
 \end_inset
 
--estructura.
- Si 
-\begin_inset Formula $R\subseteq A^{2}$
-\end_inset
-
- es una relación binaria, diremos que la fórmula 
+.
+ Diremos que la fórmula 
 \begin_inset Formula $\deff[][x_{1},x_{2}]$
 \end_inset
 
@@ -1070,15 +953,7 @@ define a
 \end_layout
 
 \begin_layout Definition
-Sea 
-\begin_inset Formula $\mathcal{L}$
-\end_inset
-
- un lenguaje de primer orden, 
-\begin_inset Formula $R\in\mathcal{L}$
-\end_inset
-
- un símbolo de relación binario y 
+Sean 
 \begin_inset Formula $\mathbf{A}$
 \end_inset
 
@@ -1090,8 +965,12 @@ Sea
 \begin_inset Formula $\mathcal{L}$
 \end_inset
 
--estructuras.
- Diremos que una función 
+-estructuras y 
+\begin_inset Formula $R\in\mathcal{L}$
+\end_inset
+
+ binaria.
+ Una función 
 \begin_inset Formula $\funcion[f]AB$
 \end_inset
 
@@ -1103,32 +982,15 @@ preserva
 \begin_inset Formula $R$
 \end_inset
 
- si para toda tupla 
-\begin_inset Formula $\left(a_{1},a_{2}\right)\in A$
+ si 
+\begin_inset Formula 
+\[
+\left(a_{1},a_{2}\right)\in R^{\mathbf{A}}\Longrightarrow(f(a_{1}),f(a_{2}))\in R^{\mathbf{B}}.
+\]
+
 \end_inset
 
- tenemos que si 
-\begin_inset Formula $\left(a_{1},a_{2}\right)\in R^{\mathbf{A}}$
-\end_inset
-
- implica que 
-\begin_inset Formula $(f(a_{1}),f(a_{2}))\in R^{\mathbf{B}}$
-\end_inset
-
-.
- Es decir, 
-\begin_inset Formula $f$
-\end_inset
-
- es un homomorfismo de 
-\begin_inset Formula $\left\langle A,R^{\mathbf{A}}\right\rangle $
-\end_inset
-
- en 
-\begin_inset Formula $\left\langle B,R^{\mathbf{B}}\right\rangle $
-\end_inset
-
-.
+ 
 \end_layout
 
 \end_deeper
@@ -1158,32 +1020,20 @@ name "thm:definibiliad de primer orden"
 \end_inset
 
 Sean 
-\begin_inset Formula $\mathcal{L}\subseteq\mathcal{L}'$
-\end_inset
-
- lenguajes de primer orden, sea 
-\begin_inset Formula $R\in\mathcal{L}'-\mathcal{L}$
-\end_inset
-
- un símbolo de relación binaria.
- Para una 
-\begin_inset Formula $\mathcal{L}'$
-\end_inset
-
--estructura 
 \begin_inset Formula $\mathbf{A}$
 \end_inset
 
-, los siguientes son equivalentes:
+ una estructura y 
+\begin_inset Formula $R\subseteq A\times A$
+\end_inset
+
+.
+ Son equivalentes:
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-Hay una 
-\begin_inset Formula $\mathcal{L}$
-\end_inset
-
--fórmula que define 
+Hay una fórmula que define 
 \begin_inset Formula $R$
 \end_inset
 
@@ -1196,7 +1046,7 @@ Hay una
 
 \begin_layout Enumerate
 Todo automorfismo 
-\begin_inset Formula $\gamma:\mathbf{A}_{\mathcal{L}}\rightarrow\mathbf{A}_{\mathcal{L}}$
+\begin_inset Formula $\gamma:\mathbf{A}\rightarrow\mathbf{A}$
 \end_inset
 
  preserva 
@@ -1207,6 +1057,80 @@ Todo automorfismo
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Problema de definibilidad
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Dados:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ un lenguaje de primer orden finito,
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ una 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+-estructura finita,
+\end_layout
+
+\begin_layout Itemize
+un 
+\begin_inset Formula $R\subseteq A\times A$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Itemize
+un fragmento de primer orden 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+decidir si hay una fórmula en 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ que define a 
+\begin_inset Formula $R$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+ 
+\end_layout
+
 \end_deeper
 \begin_layout Separator
 
@@ -1264,23 +1188,15 @@ name "thm:definibilidad abierta"
 \end_inset
 
 Sean 
-\begin_inset Formula $\mathcal{L}\subseteq\mathcal{L}'$
-\end_inset
-
- lenguajes de primer orden, sea 
-\begin_inset Formula $R\in\mathcal{L}'-\mathcal{L}$
-\end_inset
-
- un símbolo de relación binaria.
- Para una 
-\begin_inset Formula $\mathcal{L}'$
-\end_inset
-
--estructura 
 \begin_inset Formula $\mathbf{A}$
 \end_inset
 
-, los siguientes son equivalentes:
+ una estructura y 
+\begin_inset Formula $R\subseteq A\times A$
+\end_inset
+
+.
+ Son equivalentes:
 \end_layout
 
 \begin_deeper
@@ -1298,15 +1214,11 @@ Hay una fórmula abierta que define a
 
 \begin_layout Enumerate
 Para todas 
-\begin_inset Formula $\mathbf{A}_{0}\leq\mathbf{A}_{\mathcal{L}}$
-\end_inset
-
-, 
-\begin_inset Formula $\mathbf{A}_{1}\leq\mathbf{A}_{\mathcal{L}}$
+\begin_inset Formula $\mathbf{B},\mathbf{C}\leq\mathbf{A}$
 \end_inset
 
 , se tiene que todo isomorfismo 
-\begin_inset Formula $\sigma:\mathbf{A}_{0}\rightarrow\mathbf{A}_{1}$
+\begin_inset Formula $\sigma:\mathbf{B}\rightarrow\mathbf{C}$
 \end_inset
 
  preserva 
@@ -2718,41 +2630,8 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-Álgebra de relaciones definibles en 
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-La colección de relaciones 
-\begin_inset Formula $n$
-\end_inset
-
--arias definibles en 
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
- es cerrada bajo uniones e intersecciones.
-\end_layout
-
-\begin_layout Standard
-Ademas es cerrada bajo complementación para formulas abiertas y formulas
- sin restricciones.
-\end_layout
-
-\begin_layout Standard
-Llamaremos 
-\emph on
-Álgebra de Lindenbaum
-\emph default
- (de relaciones 
-\begin_inset Formula $n$
-\end_inset
-
--arias definibles por 
+\begin_layout Itemize
+Las relaciones binarias definibles por 
 \begin_inset Formula $\Sigma$
 \end_inset
 
@@ -2760,7 +2639,60 @@ Llamaremos
 \begin_inset Formula $\mathbf{A}$
 \end_inset
 
-) al reticulado distributivo (o álgebra de Boole) resultante.
+ son cerradas bajo 
+\begin_inset Formula $\cup$
+\end_inset
+
+ y 
+\begin_inset Formula $\cap$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Forman un reticulado distributivo, llamado 
+\begin_inset Flex Alert
+status open
+
+\begin_layout Plain Layout
+Álgebra de Lindenbaum
+\end_layout
+
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Un reticulado distributivo queda caracterizado por sus elementos join-irreducibl
+es.
 \end_layout
 
 \end_deeper
@@ -2786,7 +2718,7 @@ union y interseccion...
 status open
 
 \begin_layout Plain Layout
-Lema semántico de existenciales positivas
+Teorema semántico de existenciales positivas
 \end_layout
 
 \end_inset
@@ -2815,56 +2747,17 @@ name "thm:definibilidad existencial positiva"
 
 \end_inset
 
-Sean 
-\begin_inset Formula $\mathcal{L}\subseteq\mathcal{L}'$
-\end_inset
-
- lenguajes de primer orden, sea 
-\begin_inset Formula $R\in\mathcal{L}'-\mathcal{L}$
-\end_inset
-
- un símbolo de relación binaria.
- Para una 
-\begin_inset Formula $\mathcal{L}'$
-\end_inset
-
--estructura 
+Las relaciones definibles por fórmulas existenciales positivas en 
 \begin_inset Formula $\mathbf{A}$
 \end_inset
 
-, los siguientes son equivalentes:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Hay una 
-\begin_inset Formula $\mathcal{L}$
-\end_inset
-
--fórmula existencial positiva que define 
-\begin_inset Formula $R$
-\end_inset
-
- en 
+ son exactamente las preservadas por endomorfismos de 
 \begin_inset Formula $\mathbf{A}$
 \end_inset
 
 .
 \end_layout
 
-\begin_layout Enumerate
-Todo endomorfismo 
-\begin_inset Formula $\gamma:\mathbf{A}_{\mathcal{L}}\rightarrow\mathbf{A}_{\mathcal{L}}$
-\end_inset
-
- preserva 
-\begin_inset Formula $R$
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
 \end_deeper
 \begin_layout Separator
 
@@ -2908,16 +2801,19 @@ Un elemento es join-irreducible si no puede ser expresado como supremo de
 
 \begin_layout Lemma
 Una relación 
-\begin_inset Formula $r\subseteq A^{n}$
+\begin_inset Formula $r\subseteq A^{2}$
 \end_inset
 
- es join-irreducible en el álgebra de Lindenbaum de relaciones n-arias definible
-s por existenciales positivas sii hay 
-\begin_inset Formula $\bar{a}\in A^{n}$
+ es join-irreducible en 
+\begin_inset Formula $\mathbf{E}^{+}(\mathbf{A})$
+\end_inset
+
+ sii hay 
+\begin_inset Formula $p\in A^{2}$
 \end_inset
 
  tal que 
-\begin_inset Formula $r=\{h(\bar{a}):h\in\mbox{Endomorfismos}\left(\mathbf{A}\right)\}$
+\begin_inset Formula $r=\{h(p):h\in\mbox{Endomorfismos}\left(\mathbf{A}\right)\}$
 \end_inset
 
 .
