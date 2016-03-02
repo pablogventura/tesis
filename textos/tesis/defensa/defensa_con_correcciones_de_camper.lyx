@@ -672,6 +672,159 @@ define
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+ 
+\backslash
+clip(-1.78,-0.71) rectangle (1.79,2.69); 
+\backslash
+draw (-1,1)-- (0,2); 
+\backslash
+draw (0,2)-- (1,1); 
+\backslash
+draw (1,1)-- (0,0); 
+\backslash
+draw (0,0)-- (-1,1); 
+\backslash
+begin{scriptsize} 
+\backslash
+fill [color=black] (0,0) circle (1.5pt); 
+\backslash
+draw[color=black] (0.01,-0.44) node {0}; 
+\backslash
+fill [color=black] (1,1) circle (1.5pt); 
+\backslash
+draw[color=black] (1.39,1.04) node {3}; 
+\backslash
+fill [color=black] (-1,1) circle (1.5pt); 
+\backslash
+draw[color=black] (-1.39,1.02) node {2}; 
+\backslash
+fill [color=black] (0,2) circle (1.5pt); 
+\backslash
+draw[color=black] (0.01,2.38) node {1}; 
+\backslash
+end{scriptsize} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "55col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace -3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Poset 
+\begin_inset Formula $\left\langle \mathbf{2}\times\mathbf{2},\leq\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\forall y\, y\leq x$
+\end_inset
+
+ define al 1
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\forall y\, x\leq y$
+\end_inset
+
+ define al 0
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Separator
 
@@ -1394,13 +1547,6 @@ cubre a
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Formula $ $
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -1949,9 +2095,13 @@ Algoritmo para definibilidad abierta
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset Formula $\mathcal{S}=\emptyset$
+\begin_inset Formula $\textnormal{Repr}=\emptyset$
 \end_inset
 
+
+\end_layout
+
+\begin_layout Pause
 
 \end_layout
 
@@ -1968,17 +2118,29 @@ Para cada subestructura
 \end_layout
 
 \begin_deeper
+\begin_layout Pause
+
+\end_layout
+
 \begin_layout Itemize
 Si tiene representante en 
-\begin_inset Formula $\mathcal{S}$
+\begin_inset Formula $\textnormal{Repr}$
 \end_inset
 
 
 \end_layout
 
 \begin_deeper
+\begin_layout Pause
+
+\end_layout
+
 \begin_layout Itemize
 Reviso preservación en el isomorfismo
+\end_layout
+
+\begin_layout Pause
+
 \end_layout
 
 \begin_layout Itemize
@@ -1989,21 +2151,33 @@ Salteo las subestructuras de
 
 \end_layout
 
+\begin_layout Pause
+
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 No tiene representante en 
-\begin_inset Formula $\mathcal{S}$
+\begin_inset Formula $\textnormal{Repr}$
 \end_inset
 
 
 \end_layout
 
 \begin_deeper
+\begin_layout Pause
+
+\end_layout
+
 \begin_layout Itemize
 Se agrega la subestructura a 
-\begin_inset Formula $\mathcal{S}$
+\begin_inset Formula $\textnormal{Repr}$
 \end_inset
 
+
+\end_layout
+
+\begin_layout Pause
 
 \end_layout
 
@@ -2403,12 +2577,24 @@ Escencialmente es decir que se revisan los homomorfismos
 Desarrollamos algoritmos con ideas similares para los siguientes fragmentos:
 \end_layout
 
+\begin_layout Pause
+
+\end_layout
+
 \begin_layout Itemize
 Fórmulas abiertas positivas (Homomorfismos subestructuras)
 \end_layout
 
+\begin_layout Pause
+
+\end_layout
+
 \begin_layout Itemize
 Fórmulas existenciales (Automorfismos)
+\end_layout
+
+\begin_layout Pause
+
 \end_layout
 
 \begin_layout Itemize
