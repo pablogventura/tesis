@@ -1532,7 +1532,15 @@ La relación binaria
 \begin_inset Quotes fld
 \end_inset
 
-cubre a
+
+\begin_inset Formula $x$
+\end_inset
+
+ cubre a 
+\begin_inset Formula $y$
+\end_inset
+
+
 \begin_inset Quotes frd
 \end_inset
 
@@ -1541,7 +1549,7 @@ cubre a
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Formula $x\leq y\wedge x\neq y\wedge\nexists z\,\left(x\leq z\wedge x\neq z\wedge z\leq y\wedge z\neq y\right)$
+\begin_inset Formula $y\leq x\wedge x\neq y\wedge\nexists z\,\left(y\leq z\wedge y\neq z\wedge z\leq x\wedge z\neq\right)$
 \end_inset
 
 
