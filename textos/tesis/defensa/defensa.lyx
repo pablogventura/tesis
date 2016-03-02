@@ -2889,6 +2889,11 @@ end{tikzpicture}
 \end_inset
 
 
+\begin_inset space \hspace*{}
+\length 1.7cm
+\end_inset
+
+
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -2902,52 +2907,14 @@ height "1in"
 height_special "totalheight"
 status open
 
-\begin_layout Plain Layout
-afd
-\end_layout
-
-\end_inset
-
+\begin_layout Pause
 
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Separator
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
 
 \begin_layout Plain Layout
-Interpretación de la salida
+Interpretando la salida:
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-De nuevo, esquemas mas claros sobre la salida del programa
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
 \begin_inset Formula $\Delta$
 \end_inset
@@ -2988,11 +2955,107 @@ De nuevo, esquemas mas claros sobre la salida del programa
 
 \end_layout
 
-\end_deeper
-\begin_layout Frame
+\end_inset
+
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbf{E}^{+}(\mathbf{3}\times\mathbf{3})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+ 
+\backslash
+clip(7.99,-5.73) rectangle (16.7,-1.24); 
+\backslash
+draw (12,-2)-- (12,-3); 
+\backslash
+draw (12,-3)-- (11,-4); 
+\backslash
+draw (11,-4)-- (12,-5); 
+\backslash
+draw (12,-5)-- (13,-4); 
+\backslash
+draw (13,-4)-- (12,-3); 
+\backslash
+begin{scriptsize} 
+\backslash
+draw [color=black] (12,-5) circle (2.5pt); 
+\backslash
+draw[color=black] (12,-5.26) node {$
+\backslash
+Delta$}; 
+\backslash
+draw [color=black] (11,-4) circle (2.5pt); 
+\backslash
+draw[color=black] (10.72,-4.03) node {$
+\backslash
+leq$}; 
+\backslash
+fill [color=black] (12,-3) circle (1.5pt); 
+\backslash
+draw[color=black] (12.64,-3.01) node {$
+\backslash
+leq
+\backslash
+cup
+\backslash
+geq$}; 
+\backslash
+draw [color=black] (13,-4) circle (2.5pt); 
+\backslash
+draw[color=black] (13.27,-4.03) node {$
+\backslash
+geq$}; 
+\backslash
+draw [color=black] (12,-2) circle (2.5pt); 
+\backslash
+draw[color=black] (12.05,-1.69) node {$L^2$}; 
+\backslash
+end{scriptsize} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Separator
 
 \end_layout
@@ -3012,12 +3075,6 @@ Nuestro teorema de reticulados distributivos
 
 \begin_deeper
 \begin_layout Theorem
-\begin_inset CommandInset label
-LatexCommand label
-name "thm:Caracterizacion de las relaciones binarias definibles por existenciales positivas en reticulados distributivos"
-
-\end_inset
-
 Sea 
 \begin_inset Formula $\mathbf{L}$
 \end_inset
@@ -3114,9 +3171,8 @@ Aportes
 \begin_layout Itemize
 
 \size small
-Se probaron resultados para la construcción de un conjunto generador del
- conjunto de morfismos a revisar para definibilidad abierta y definibilidad
- abierta positiva.
+Resultados sobre un conjunto generador para los morfismos a revisar para
+ definibilidad abierta y definibilidad abierta positiva.
 \end_layout
 
 \begin_layout Pause
@@ -3126,9 +3182,8 @@ Se probaron resultados para la construcción de un conjunto generador del
 \begin_layout Itemize
 
 \size small
-Se desarrollaron algoritmos para decidir definibilidad de relaciones en
- primer orden, en fórmulas abiertas, abiertas positivas, existenciales y
- existenciales positivas.
+Algoritmos para decidir definibilidad de relaciones, en fórmulas abiertas,
+ abiertas positivas, existenciales y existenciales positivas.
 \end_layout
 
 \begin_layout Pause
@@ -3138,8 +3193,7 @@ Se desarrollaron algoritmos para decidir definibilidad de relaciones en
 \begin_layout Itemize
 
 \size small
-Se desarrollaron los respectivos algoritmos para obtener el álgebra de relacione
-s definibles en cada fragmento de primer orden.
+Algoritmos para obtener el álgebra de relaciones definibles.
 \end_layout
 
 \begin_layout Pause
@@ -3159,9 +3213,8 @@ Se desarrolló una herramienta que implementa dichos algoritmos.
 \begin_layout Itemize
 
 \size small
-Al probar la herramienta, se conjeturó y luego se probó una caracterización
- de las relaciones binarias definibles por existenciales positivas en reticulado
-s distributivos.
+Caracterización de las relaciones binarias definibles por existenciales
+ positivas en reticulados distributivos.
 \end_layout
 
 \end_deeper
@@ -3184,8 +3237,7 @@ Trabajo Futuro
 
 \begin_deeper
 \begin_layout Itemize
-Algoritmos para decidir definibilidad por conjunción de atómicas y por primitiva
-s positivas.
+Definibilidad por conjunción de atómicas y por primitivas positivas.
 \end_layout
 
 \begin_layout Pause
@@ -3193,8 +3245,7 @@ s positivas.
 \end_layout
 
 \begin_layout Itemize
-Explorar y aprovechar en la implementación, la interacción entre los diferentes
- tipos de definibilidad.
+Interacción entre los diferentes tipos de definibilidad.
 \end_layout
 
 \begin_layout Pause
@@ -3202,9 +3253,7 @@ Explorar y aprovechar en la implementación, la interacción entre los diferente
 \end_layout
 
 \begin_layout Itemize
-También esperamos explorar mejores implementaciones para la generación de
- subestructuras, por ejemplo estudiando los algoritmos utilizados por el
- Universal Álgebra Calculator.
+Mejores implementaciones para la generación de subestructuras.
 \end_layout
 
 \begin_layout Pause
@@ -3212,8 +3261,8 @@ También esperamos explorar mejores implementaciones para la generación de
 \end_layout
 
 \begin_layout Itemize
-Esperamos también continuar el estudio de la definibilidad existencial positiva
- en reticulados distributivos, investigando los casos de mayor aridad.
+Continuar el estudio de la definibilidad existencial positiva en reticulados
+ distributivos.
 \end_layout
 
 \end_deeper
