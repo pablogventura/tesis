@@ -2328,7 +2328,7 @@ Contraejemplo!
 status open
 
 \begin_layout Plain Layout
-Lema semántico de abiertas positivas
+Otros algoritmos
 \end_layout
 
 \end_inset
@@ -2350,371 +2350,20 @@ Escencialmente es decir que se revisan los homomorfismos
 \end_layout
 
 \begin_deeper
-\begin_layout Theorem
-\begin_inset CommandInset label
-LatexCommand label
-name "thm:definibilidad abierta positiva"
-
-\end_inset
-
-Sean 
-\begin_inset Formula $\mathcal{L}\subseteq\mathcal{L}'$
-\end_inset
-
- lenguajes de primer orden, sea 
-\begin_inset Formula $R\in\mathcal{L}'-\mathcal{L}$
-\end_inset
-
- un símbolo de relación binaria.
- Para una 
-\begin_inset Formula $\mathcal{L}'$
-\end_inset
-
--estructura 
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
-, los siguientes son equivalentes:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Hay una fórmula abierta positiva que define a 
-\begin_inset Formula $R$
-\end_inset
-
- en 
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Enumerate
-Para todas 
-\begin_inset Formula $\mathbf{A}_{0}\leq\mathbf{A}_{\mathcal{L}}$
-\end_inset
-
-,
-\begin_inset Formula $\mathbf{B}_{0}\leq\mathbf{B}_{\mathcal{L}}$
-\end_inset
-
-, se tiene que todo homomorfismo 
-\begin_inset Formula $h:\mathbf{A}_{0}\rightarrow\mathbf{B}_{0}$
-\end_inset
-
- preserva 
-\begin_inset Formula $R$
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Separator
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Teorema de generacion de abiertas positivas
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Theorem
-Sea 
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
- una 
-\begin_inset Formula $\mathcal{L}$
-\end_inset
-
--estructura.
- Sea 
-\begin_inset Formula $\mathcal{S}\subseteq\subestr{\mathbf{A}}$
-\end_inset
-
- tal que contiene exactamente un representante por cada tipo de isomorfismo
- en 
-\begin_inset Formula $\subestr{\mathbf{A}}$
-\end_inset
-
-.
- Sea 
-\begin_inset Formula $\mathcal{H}\subseteq\left\{ \gamma:\,\text{\funcion[\gamma]{\mathbf{A}_{0}}{\mathbf{A}_{1}}}\mbox{ homomorfismo con }\mathbf{A}_{0}\leq\mathbf{A}\mbox{ y }\mathbf{A}_{1}\leq\mathbf{A}\right\} $
-\end_inset
-
- tal que:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Formula $\mathcal{F}\subseteq\mathcal{H}$
-\end_inset
-
- con 
-\begin_inset Formula $\mathcal{F}$
-\end_inset
-
- como en el Teorema 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "thm:construccion de constelacion abierta"
-
-\end_inset
-
-,
-\end_layout
-
-\begin_layout Itemize
-para cada 
-\begin_inset Formula $\mathbf{A},\mathbf{B}\in\mathcal{S}$
-\end_inset
-
- 
-\shape italic
-todo 
-\begin_inset Formula $\funcion[h]{\mathbf{A}}{\mathbf{B}}$
-\end_inset
-
- homomorfismo sobreyectivo está en 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
-\begin_layout Theorem
-Entonces 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
- genera 
-\begin_inset Formula $\left\{ \gamma:\,\text{\funcion[\gamma]{\mathbf{A}_{0}}{\mathbf{A}_{1}}}\mbox{ homomorfismo con }\mathbf{A}_{0}\leq\mathbf{A}\mbox{ y }\mathbf{A}_{1}\leq\mathbf{A}\right\} $
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Theorem
-
-\end_layout
-
-\end_deeper
-\begin_layout Separator
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Cantor-Bernstein
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Theorem
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Las estructuras finitas cumplen la propiedad de Cantor-Bernstein
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "thm:cantor-bernstein"
-
-\end_inset
-
-Dadas 
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
- y 
-\begin_inset Formula $\mathbf{B}$
-\end_inset
-
- estructuras finitas, si hay 
-\begin_inset Formula $f:A\rightarrow B$
-\end_inset
-
- y 
-\begin_inset Formula $g:B\rightarrow A$
-\end_inset
-
- homomorfismos inyectivos entonces hay un 
-\begin_inset Formula $\funcion[\gamma]{\mathbf{A}}{\mathbf{B}}$
-\end_inset
-
- isomorfismo.
-\end_layout
-
-\begin_layout Theorem
-
-\end_layout
-
-\end_deeper
-\begin_layout Separator
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Algoritmo para abiertas positivas
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
-Modificamos el algoritmo para definibilidad abierta.
-\end_layout
-
-\begin_layout Pause
-
-\end_layout
-
-\begin_layout Standard
-Recorrer los 
-\begin_inset Formula $\mathcal{L}$
-\end_inset
-
--homomorfismos biyectivos entre 
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
- y cada 
-\begin_inset Formula $\mathbf{S}\in\mathcal{S}$
-\end_inset
-
-, hay tres casos:
-\end_layout
-
-\begin_layout Pause
-
+Desarrollamos algoritmos con ideas similares para los siguientes fragmentos:
 \end_layout
 
 \begin_layout Itemize
-No hay 
-\begin_inset Formula $\mathcal{L}$
-\end_inset
-
--homomorfismos biyectivos.
+Formulas abiertas positivas (Homomorfismos subestructuras)
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
-Hay que revisar homomorfismos biyectivos de 
-\begin_inset Formula $\mathbf{S}$
-\end_inset
-
- en 
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
-.
+Formulas existenciales (Automorfismos)
 \end_layout
 
-\begin_layout Pause
-
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
-Hay 
-\begin_inset Formula $\mathcal{L}$
-\end_inset
-
--homomorfismos biyectivos pero ninguno es un isomorfismo.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Los revisamos por preservacion.
-\end_layout
-
-\begin_layout Pause
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Hay un 
-\begin_inset Formula $\mathcal{L}$
-\end_inset
-
--isomorfimo.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Lo revisamos por preservacion igual que en el algoritmo para definibilidad
- abierta.
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Separator
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Algoritmo para abiertas positivas
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-Al final ya han sido revisados todos los homomorfismos biyectivos entre
- estructuras de 
-\begin_inset Formula $\mathcal{S}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Solo falta revisar los homomorfismos sobreyectivos, no inyectivos entre
- las estructuras de 
-\begin_inset Formula $\mathcal{S}$
-\end_inset
-
-.
+Formulas existenciales positivas (Endomorfismos)
 \end_layout
 
 \end_deeper
@@ -2828,6 +2477,131 @@ union y interseccion...
 status open
 
 \begin_layout Plain Layout
+Join-irreducibles
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Definicion y que son los uno generados
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Un elemento es join-irreducible si no puede ser expresado como supremo de
+ otros elementos.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+ 
+\backslash
+clip(-2.47,-2.42) rectangle (1.58,1.51); 
+\backslash
+draw (-2,-1)-- (-1,0); 
+\backslash
+draw (-1,0)-- (0,1); 
+\backslash
+draw (0,-1)-- (1,0); 
+\backslash
+draw (1,0)-- (0,1); 
+\backslash
+draw (0,-1)-- (-1,0); 
+\backslash
+draw (-2,-1)-- (-1,-2); 
+\backslash
+draw (-1,-2)-- (0,-1); 
+\backslash
+begin{scriptsize} 
+\backslash
+draw [color=black] (-2,-1) circle (2.5pt); 
+\backslash
+draw[color=black] (-2.25,-0.94) node {2}; 
+\backslash
+fill [color=black] (-1,0) circle (1.5pt); 
+\backslash
+draw[color=black] (-1.2,0.21) node {4}; 
+\backslash
+draw [color=black] (0,-1) circle (2.5pt); 
+\backslash
+draw[color=black] (0.2,-1.17) node {3}; 
+\backslash
+fill [color=black] (-1,-2) circle (1.5pt); 
+\backslash
+draw[color=black] (-0.98,-2.31) node {0}; 
+\backslash
+fill [color=black] (0,1) circle (1.5pt); 
+\backslash
+draw[color=black] (-0.01,1.33) node {1}; 
+\backslash
+draw [color=black] (1,0) circle (2.5pt); 
+\backslash
+draw[color=black] (1.28,0.08) node {5}; 
+\backslash
+end{scriptsize} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Teorema semántico de existenciales positivas
 \end_layout
 
@@ -2878,7 +2652,7 @@ Las relaciones definibles por fórmulas existenciales positivas en
 status open
 
 \begin_layout Plain Layout
-Join-irreducibles
+Cálculo de las relaciones Join-irreducibles
 \end_layout
 
 \end_inset
@@ -2900,15 +2674,6 @@ Definicion y que son los uno generados
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-Un elemento es join-irreducible si no puede ser expresado como supremo de
- otros elementos.
-\end_layout
-
-\begin_layout Pause
-
-\end_layout
-
 \begin_layout Lemma
 Una relación 
 \begin_inset Formula $r\subseteq A^{2}$
@@ -2939,67 +2704,6 @@ Una relación
 status open
 
 \begin_layout Plain Layout
-Teorema de representación de Birkhoff
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Theorem
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Teorema de representación de Birkhoff
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "thm:representacion de birkhoff, reticulados"
-
-\end_inset
-
- Todo reticulado distributivo finito 
-\begin_inset Formula $\mathbf{L}$
-\end_inset
-
- es isomorfo al reticulado de conjuntos descendientes del poset de elementos
- join-irreducibles en 
-\begin_inset Formula $\mathbf{L}$
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
-\begin_layout Frame
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Basta con los uno generados
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Separator
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
 Generación del álgebra de Lindenbaum
 \end_layout
 
@@ -3010,9 +2714,7 @@ Generación del álgebra de Lindenbaum
 
 \begin_deeper
 \begin_layout Itemize
-Basta con recopilar los morfismos que los algoritmos para chequeo de definibilid
-ad hubieran chequeado por preservación.
- En particular los endomorfismos para existenciales positivas.
+Recopilamos los endomorfismos generadores a partir del algoritmo de chequeo.
 \end_layout
 
 \begin_layout Pause
@@ -3020,11 +2722,11 @@ ad hubieran chequeado por preservación.
 \end_layout
 
 \begin_layout Itemize
-Luego basta con saturar a cada 
+Saturamos cada 
 \begin_inset Formula $\bar{a}\in A^{n}$
 \end_inset
 
- por ese conjunto de morfismos para obtener cada elemento join-irreducible.
+ con estos endomorfismos para obtener cada elemento join-irreducible.
  En particular 
 \begin_inset Formula $\{h(\bar{a}):h\in\mbox{Endomorfismos}\left(\mathbf{A}\right)\}$
 \end_inset
@@ -3066,19 +2768,39 @@ De nuevo, esquemas mas claros sobre la salida del programa
 \begin_deeper
 \begin_layout Standard
 
-\family typewriter
-\size scriptsize
-lat3x3 = LatticePoset([[2,3],[],[4,5],[5,6],[7],[7,8],[8],[1],[1]])
 \end_layout
 
 \begin_layout Standard
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
 
-\family typewriter
-\size scriptsize
-lat3x3 = definability.sage_to.sage_lattice_to_model(lat3x3)
-\end_layout
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset ERT
 status open
@@ -3087,7 +2809,7 @@ status open
 
 
 \backslash
-begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.8cm,y=0.8cm]
  
 \backslash
 clip(-4.7,-2.49) rectangle (5.16,2.6); 
@@ -3157,6 +2879,36 @@ draw[color=black] (-2.27,0.03) node {4};
 end{scriptsize} 
 \backslash
 end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+afd
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
