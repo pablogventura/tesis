@@ -559,8 +559,8 @@ Lógica de Primer Orden
 
 \end_inset
 
- (LPO) es un lenguaje formal que permite expresar propiedades de estructuras
- matemáticas.
+ es un lenguaje formal que permite expresar propiedades de estructuras matemátic
+as.
 \begin_inset ERT
 status open
 
@@ -577,7 +577,7 @@ pause{}
 \end_layout
 
 \begin_layout Itemize
-En nuestro caso lo restringimos a formulas abiertas, abiertas positivas,
+En nuestro caso lo restringimos a fórmulas abiertas, abiertas positivas,
  existenciales, existenciales positivas y sin restricciones.
 \end_layout
 
@@ -617,7 +617,7 @@ relacionar con lenguaje natural
 status open
 
 \begin_layout Plain Layout
-las formulas tienen como sujeto a sus variables libres
+las fórmulas tienen como sujeto a sus variables libres
 \end_layout
 
 \end_inset
@@ -2355,15 +2355,15 @@ Desarrollamos algoritmos con ideas similares para los siguientes fragmentos:
 \end_layout
 
 \begin_layout Itemize
-Formulas abiertas positivas (Homomorfismos subestructuras)
+Fórmulas abiertas positivas (Homomorfismos subestructuras)
 \end_layout
 
 \begin_layout Itemize
-Formulas existenciales (Automorfismos)
+Fórmulas existenciales (Automorfismos)
 \end_layout
 
 \begin_layout Itemize
-Formulas existenciales positivas (Endomorfismos)
+Fórmulas existenciales positivas (Endomorfismos)
 \end_layout
 
 \end_deeper
