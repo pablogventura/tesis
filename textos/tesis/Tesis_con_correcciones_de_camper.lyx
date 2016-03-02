@@ -16989,7 +16989,7 @@ draw [color=black] (12,-5) circle (2.5pt);
 \backslash
 draw[color=black] (12,-5.26) node {$
 \backslash
-emptyset$}; 
+Delta$}; 
 \backslash
 draw [color=black] (11,-4) circle (2.5pt); 
 \backslash
