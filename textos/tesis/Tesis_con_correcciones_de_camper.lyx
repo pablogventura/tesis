@@ -7,7 +7,8 @@
 \usepackage{pgf,tikz}
 \usetikzlibrary{arrows}
 
-\usepackage{algorithm,algpseudocode}
+\usepackage[Algoritmo]{algorithm}
+\usepackage{algpseudocode}
 \usepackage{hyperref}
 \usepackage[style=authoryear,backend=biber]{biblatex}
 
@@ -1565,7 +1566,7 @@ Preliminares
 \end_layout
 
 \begin_layout Standard
-Presentamos continuación los resultados básicos de teoría de modelos que
+Presentamos a continuación los resultados básicos de teoría de modelos que
  serán necesarios para demostrar los teoremas de definibilidad en la sección
  siguiente.
  Si bien la intención ha sido la de escribir un trabajo autocontenido, suponemos
@@ -1997,7 +1998,9 @@ equivalentes
 \begin_layout Standard
 El siguiente teorema será utilizado para demostrar todas las caracterizaciones
  de definibilidad; es la herramienta que nos permitirá transformar un diagrama
- infinitario en una fórmula.
+ infinitario (i.e el conjunto infinito de fórmulas que se satisfacen para
+ una tupla de elementos, que se definirá formalmente mas adelante) en una
+ fórmula.
 \end_layout
 
 \begin_layout --Separator--
@@ -2226,6 +2229,7 @@ Para toda fórmula abierta
 \end_inset
 
 .
+ Lo probaremos por inducción en las fórmulas.
  El caso base es directo ya que los homomorfismos preservan términos y relacione
 s.
  Veamos los casos inductivos:
@@ -2316,8 +2320,8 @@ Veamos que
 \begin_inset Formula 
 \begin{align*}
 \gamma(a) & =\gamma(a')\\
-\mbox{sii }\mathbf{B} & \vDash(x_{1}\equiv x_{2})[\gamma(a),\gamma(a')]\\
-\mbox{sii }\mathbf{A} & \vDash(x_{1}\equiv x_{2})[a,a']\\
+\mbox{sii }\mathbf{B} & \vDash(x_{1}=x_{2})[\gamma(a),\gamma(a')]\\
+\mbox{sii }\mathbf{A} & \vDash(x_{1}=x_{2})[a,a']\\
 \mbox{sii }a & =a'.
 \end{align*}
 
@@ -2690,7 +2694,20 @@ Rutina.
 
 \begin_layout Standard
 Ahora definimos el diagrama atómico positivo.
- Éste se utilizará para la construcción de fórmulas positivas.
+ Éste se utilizará para la construcción de fórmulas positivas (i.e.
+ fórmulas sin ocurrencias de 
+\begin_inset Formula $\neg$
+\end_inset
+
+, 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+, 
+\begin_inset Formula $\leftrightarrow$
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Definition
@@ -3600,7 +3617,7 @@ Sean
 \begin_inset Formula $\mathcal{L}'$
 \end_inset
 
--estructuras, los siguientes son equivalentes:
+-estructuras finitas, los siguientes son equivalentes:
 \end_layout
 
 \begin_deeper
@@ -4050,7 +4067,7 @@ Sean
 \begin_inset Formula $\mathcal{L}'$
 \end_inset
 
--estructuras, los siguientes son equivalentes:
+-estructuras finitas, los siguientes son equivalentes:
 \end_layout
 
 \begin_deeper
@@ -4176,7 +4193,7 @@ preserva
 tales que 
 \begin_inset Formula 
 \[
-\left(a_{1i},\ldots,a_{ni}\right)\in R^{A_{i}}\text{ para cada }i\in\left[1,m\right]
+\left(a_{1i},\ldots,a_{ni}\right)\in R^{A_{i}}\text{ para cada }i\in\left\{ 1,\dots,m\right\} 
 \]
 
 \end_inset
@@ -4288,7 +4305,7 @@ Sean
 \begin_inset Formula $\mathcal{L}'$
 \end_inset
 
--estructuras, los siguientes son equivalentes:
+-estructuras finitas, los siguientes son equivalentes:
 \end_layout
 
 \begin_deeper
@@ -4530,7 +4547,7 @@ para cada
  con 
 \begin_inset Formula 
 \[
-\bigcup R^{\mathbf{A}_{j}}=\left\{ \left(x_{1i}^{j},\dots,x_{ni}^{j}\right)\text{ con }i\in\left\{ 1,\left|R^{\mathbf{A}_{j}}\right|\right\} \right\} 
+\bigcup R^{\mathbf{A}_{j}}=\left\{ \left(x_{1i}^{j},\dots,x_{ni}^{j}\right)\text{ con }i\in\left\{ 1,\dots,\left|R^{\mathbf{A}_{j}}\right|\right\} \right\} 
 \]
 
 \end_inset
@@ -4659,7 +4676,7 @@ Ahora supongamos
 Entonces como 
 \begin_inset Formula 
 \[
-\mathbf{A}_{1}^{\left|R^{\mathbf{A}_{1}}\right|}\times\cdots\mathbf{B}^{\left|R^{\mathbf{B}}\right|}\cdots\times\mathbf{A}_{m}^{\left|R^{\mathbf{A}_{m}}\right|}\vDash\varphi\left[\enumeracion[][\bar{x}]\right]
+\mathbf{A}_{1}^{\left|R^{\mathbf{A}_{1}}\right|}\times\cdots\times\mathbf{B}^{\left|R^{\mathbf{B}}\right|}\times\cdots\times\mathbf{A}_{m}^{\left|R^{\mathbf{A}_{m}}\right|}\vDash\varphi\left[\enumeracion[][\bar{x}]\right]
 \]
 
 \end_inset
@@ -4725,7 +4742,7 @@ Sean
 \begin_inset Formula $\mathcal{L}'$
 \end_inset
 
--estructuras, los siguientes son equivalentes:
+-estructuras finitas, los siguientes son equivalentes:
 \end_layout
 
 \begin_deeper
@@ -4952,16 +4969,16 @@ para cada
  con 
 \begin_inset Formula 
 \[
-\bigcup R^{\mathbf{A}_{j}}=\left\{ \left(x_{1i}^{j},\dots,x_{ni}^{j}\right)\text{ con }i\in\left\{ 1,\left|R^{\mathbf{A}_{j}}\right|\right\} \right\} 
+\bigcup R^{\mathbf{A}_{j}}=\left\{ \left(x_{1i}^{j},\dots,x_{ni}^{j}\right)\text{ con }i\in\left\{ 1,\dots,\left|R^{\mathbf{A}_{j}}\right|\right\} \right\} 
 \]
 
 \end_inset
 
 para cada 
-\begin_inset Formula $i\in\left\{ 1,\dots,m\right\} $
+\begin_inset Formula $j\in\left\{ 1,\dots,m\right\} $
 \end_inset
 
- .
+.
  Sean 
 \begin_inset Formula 
 \[
@@ -5192,7 +5209,7 @@ Sean
 \begin_inset Formula $\mathcal{L}'$
 \end_inset
 
--estructuras, los siguientes son equivalentes:
+-estructuras finitas, los siguientes son equivalentes:
 \end_layout
 
 \begin_deeper
@@ -5614,7 +5631,12 @@ La razón principal para trabajar con clases disjuntas reside en que dado
 \begin_inset Formula $\imagen{\gamma}$
 \end_inset
 
- para reconocer inequívocamente a 
+ (i.e.
+ dominio e imagen de 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, respectivamente) para reconocer inequívocamente a 
 \begin_inset Formula $\mathbf{A}$
 \end_inset
 
@@ -7261,23 +7283,7 @@ status open
 
 		
 \backslash
-EndIf
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-		
-\backslash
-If{
+ElsIf{
 \end_layout
 
 \end_inset
@@ -8258,12 +8264,14 @@ reference "lin:abierta-auto2"
 
 \end_inset
 
- no se necesita revisar si los automorfismos son 
-\begin_inset Formula $\mathcal{L}\cup\left\{ R\right\} $
+ basta con revisar solamente si los automorfismos preservan 
+\begin_inset Formula $R$
 \end_inset
 
--automorfismos ya que, como se recorren todos su inversa también es revisada
+.
+ Esto se fundamenta en que al recorrer todos, su inversa también es revisada
  por preservación.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -9554,23 +9562,7 @@ status open
 
 		
 \backslash
-EndIf
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-		
-\backslash
-If{
+ElsIf{
 \end_layout
 
 \end_inset
@@ -17801,12 +17793,14 @@ Definability
 \emph default
 , así como SageMath han sido desarrollados en Python 2.7, por lo que necesitan
  del interprete instalado.
- Dado que 
+ El paquete se desarrolla en un repositorio Git, por lo que se necesita
+ una instalación de éste para poder descargar el paquete.
+ Como 
 \emph on
 Definability
 \emph default
- es un paquete desarrollado para SageMath, necesita de una instalación de
- éste.
+ es un paquete desarrollado para SageMath, se necesita de una versión funcional
+ de éste sobre la cual instalar el paquete.
  Además, utiliza interfaces con otros programas.
  Particularmente utiliza Minion, y LADR (interfaz de línea de comandos de
  Prover9, Mace4, y otros programas).
@@ -17817,6 +17811,10 @@ Definability
  ha sido probado en versiones particulares de estos programas y no se sabe
  si funcionara en otras.
  Las versiones utilizadas son las siguientes:
+\end_layout
+
+\begin_layout Itemize
+Git 2.1.4
 \end_layout
 
 \begin_layout Itemize
@@ -18077,6 +18075,12 @@ Instalación
 
 \begin_layout Subsection
 Instalación del paquete en SageMath
+\end_layout
+
+\begin_layout Standard
+Ahora mostraremos los pasos para la instalación de nuestro paquete a través
+ de comandos por consola en Linux, ya que SageMath no ha sido portado a
+ otros sistemas operativos.
 \end_layout
 
 \begin_layout Standard
@@ -18534,12 +18538,17 @@ join = definability.FO_Operation([[0,1,2,3],
 
 \begin_layout Plain Layout
 
-rP = definability.FO_Relation([(2,), (3,)], uni)
+rP = definability.FO_Relation([(2,), (3,)], universe)
 \end_layout
 
 \end_inset
 
-
+Notar que al definir 
+\family typewriter
+rP
+\family default
+ estamos pasando una lista de 1-tuplas que definen a la relación y además
+ el universo sobre el que está definida.
 \end_layout
 
 \begin_layout Standard
@@ -18667,6 +18676,27 @@ los cuales toman dos tipos
 
 , y devuelven una tupla con un booleano y un contraejemplo, si es que lo
  hay.
+\end_layout
+
+\begin_layout Standard
+Los tipos de primer orden implementados por 
+\family typewriter
+FO_Type
+\family default
+, tienen implementada la operación 
+\begin_inset Quotes fld
+\end_inset
+
++
+\begin_inset Quotes frd
+\end_inset
+
+ como la unión de tipos.
+ Esto permite definir más cómodamente el tipo 
+\begin_inset Formula $\mathcal{L}'$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
