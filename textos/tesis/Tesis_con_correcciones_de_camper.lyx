@@ -5652,7 +5652,7 @@ La razón principal para trabajar con clases disjuntas reside en que dado
 \end_inset
 
  con 
-\begin_inset Formula $\mathbf{A},\mathbf{B}\in\subestr{\mathcal{K}}$
+\begin_inset Formula $\mathbf{A},\mathbf{B}\in\mathcal{K}$
 \end_inset
 
 , basta con conocer 
@@ -5674,6 +5674,24 @@ La razón principal para trabajar con clases disjuntas reside en que dado
 
  y 
 \begin_inset Formula $\mathbf{B}$
+\end_inset
+
+.
+ A pesar de esto, un morfismo 
+\begin_inset Formula $\funcion[\gamma]{\mathbf{A}}{\mathbf{B}}$
+\end_inset
+
+ con 
+\begin_inset Formula $\mathbf{A},\mathbf{B}\in\subestr{\mathbf{C}}\subseteq\subestr{\mathcal{K}}$
+\end_inset
+
+, es indistinguible de 
+\begin_inset Formula $\funcion[\gamma]{\mathbf{A}}{\mathbf{C}}$
+\end_inset
+
+, por lo que necesitaremos trabajar siempre con un conjunto de morfismos
+ sobreyectivos cuando trabajemos sobre 
+\begin_inset Formula $\subestr{\mathcal{K}}$
 \end_inset
 
 .
