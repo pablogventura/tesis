@@ -655,7 +655,7 @@ end{titlepage}
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace -4cm
+\begin_inset VSpace -6cm
 \end_inset
 
 
@@ -673,6 +673,7 @@ height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
+\noindent
 \align center
 \begin_inset Box Frameless
 position "t"
@@ -721,17 +722,42 @@ Definability
  lattices.
 \end_layout
 
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset VSpace smallskip
 \end_inset
 
 
-\begin_inset VSpace 1.5cm
+\end_layout
+
+\begin_layout Description
+\noindent
+
+\lang english
+Classification: F.4.1 - Model theory.
+\end_layout
+
+\begin_layout Description
+\noindent
+
+\lang english
+Keywords: Finite model theory, definability, relations, algorithms, morphisms,
+ fragments of first order.
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Plain Layout
+\noindent
 \align center
+\begin_inset VSpace 1cm
+\end_inset
+
+
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -775,18 +801,18 @@ dos.
 s binarias definibles por existenciales positivas en reticulados distributivos.
 \end_layout
 
-\end_inset
-
-
-\begin_inset VSpace 1.5cm
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset VSpace smallskip
 \end_inset
 
 
 \end_layout
 
 \begin_layout Description
+\noindent
 Clasificación: F.4.1 - Model theory.
- 
 \begin_inset Note Note
 status open
 
@@ -812,12 +838,18 @@ ajos/
 \end_layout
 
 \begin_layout Description
+\noindent
 Palabras
 \begin_inset space ~
 \end_inset
 
 clave: Teoría de modelos finitos, definibilidad, relaciones, algoritmos,
  morfismos, fragmentos de primer orden.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
