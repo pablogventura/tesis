@@ -897,7 +897,214 @@ Introducción
 \end_layout
 
 \begin_layout Section
+Motivación
+\end_layout
+
+\begin_layout Standard
+Al definir un objeto entre otros es fundamental la capacidad del lenguaje
+ con el que contamos.
+ Para ilustrar la idea, veamos el siguiente esquema con figuras geométricas.
+ Cada figura tiene una forma y una ubicación propia.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/ejemplo leng natural.svg
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Figuras geométricas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Supongamos que queremos definir al círculo.
+ Necesitamos de una propiedad que solo se cumpla en él.
+ Un ejemplo trivial podría ser 
+\begin_inset Quotes fld
+\end_inset
+
+Soy un círculo
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Es claro que esta oración solo se cumple cuando ponemos como hablante al
+ círculo.
+ Esto sería haber 
+\emph on
+definido
+\emph default
+ al círculo en nuestro dibujo.
+\end_layout
+
+\begin_layout Standard
+El problema se vuelve más interesante si restringimos un poco el lenguaje.
+ Supongamos ahora que queremos definir al circulo, pero ya no podemos usar
+ los nombres de las figuras geométricas.
+ Tenemos la alternativa de definirlo como 
+\begin_inset Quotes fld
+\end_inset
+
+Soy el que está a la izquierda de todos los demás
+\begin_inset Quotes frd
+\end_inset
+
+ y todavía podemos afirmar que efectivamente la oración es solo verdad cuando
+ el círculo es quién la dice.
+\end_layout
+
+\begin_layout Standard
+Pero que pasa si restringimos las oraciones utilizando solo expresiones
+ del tipo 
+\begin_inset Quotes fld
+\end_inset
+
+esta arriba o a la misma altura que
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+esta abajo o a la misma altura que
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Es fácil definir al triangulo como 
+\begin_inset Quotes fld
+\end_inset
+
+Tengo a todos abajo o a la misma altura que yo
+\begin_inset Quotes frd
+\end_inset
+
+ y también al hexagono como 
+\begin_inset Quotes fld
+\end_inset
+
+Tengo a todos arriba o a la misma altura que yo
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Pero volvamos a intentar definir el círculo.
+ Esta vez nuestro lenguaje ha perdido la capacidad de distinguir entre derecha
+ e izquierda.
+ Todo lo que podemos decir sobre él es que 
+\begin_inset Quotes fld
+\end_inset
+
+Tengo alguien arriba o a la misma altura que yo, que no soy yo y tengo alguien
+ abajo o a la misma altura que yo, que yo soy yo
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Finalmente estamos en un problema, ya que el cuadrado cumple esa misma
+ propiedad.
+ Ahora ya no podemos definir al circulo, ya que todo lo que podemos decir
+ de él en nuestro nuevo lenguaje, lo cumple también el cuadrado.
+\end_layout
+
+\begin_layout Standard
+Esto se debe a que reflejar nuestro dibujo como en la figura siguiente,
+ mantiene el orden respecto de quién estaba abajo de quién (i.e preserva
+ las propiedades expresables en nuestro lenguaje), pero invierte la derecha
+ y la izquierda.
+ Esto representa un 
+\emph on
+automorfismo
+\emph default
+ de nuestro dibujo, que en particular, no 
+\emph on
+preserva
+\emph default
+ la ubicación del círculo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/ejemplo leng natural espejo.svg
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Figuras geométricas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es interesante notar que en cambio, para aquellas figuras geométricas sobre
+ las que si se preserva la ubicación, pudimos encontrar definiciones a pesar
+ de lo restringido de nuestro lenguaje.
+\end_layout
+
+\begin_layout Section
 El problema
+\end_layout
+
+\begin_layout Standard
+El problema sobre el que trabajamos, trata sobre decidir definibilidad utilizand
+o el lenguaje formal llamado Lógica de Primer Orden.
 \end_layout
 
 \begin_layout Standard
@@ -2031,7 +2238,7 @@ equivalentes
 El siguiente teorema será utilizado para demostrar todas las caracterizaciones
  de definibilidad; es la herramienta que nos permitirá transformar un diagrama
  infinitario (i.e el conjunto infinito de fórmulas que se satisfacen para
- una tupla de elementos, que se definirá formalmente mas adelante) en una
+ una tupla de elementos, que se definirá formalmente más adelante) en una
  fórmula.
 \end_layout
 
