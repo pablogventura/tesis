@@ -881,11 +881,7 @@ Sean
 \end_inset
 
 -estructuras.
- Dado un símbolo de relación 
-\begin_inset Formula $n$
-\end_inset
-
--ario 
+ Dado un símbolo de relación n-ario 
 \begin_inset Formula $R\in\mathcal{L}$
 \end_inset
 
@@ -1338,7 +1334,7 @@ reference "thm:construccion de constelacion abierta positiva"
 
 \end_inset
 
-, se basan en encontrar una subconjunto 
+, se basan en encontrar un subconjunto 
 \emph on
 generador
 \emph default
@@ -1346,7 +1342,7 @@ generador
 \end_layout
 
 \begin_layout Standard
-Otra característica importante de las algoritmos desarrollados, en este
+Otra característica importante de los algoritmos desarrollados, en este
  caso en relación a su implementación, es que la construcción de morfismos
  se lleva a cabo como una instancia del 
 \emph on
@@ -1767,7 +1763,7 @@ Sean
 \begin_inset Formula $\mathbf{A}$
 \end_inset
 
-,
+, 
 \begin_inset Formula $\mathbf{B}$
 \end_inset
 
@@ -2262,7 +2258,7 @@ Sea
 \begin_layout Proof
 \begin_inset Formula 
 \[
-\mathbf{A}\vDash(\varphi_{1}\eta\varphi_{2})[\bar{a}]\textnormal{ sii }\mathbf{A}\vDash\varphi_{1}[\bar{a}]"\eta"\mathbf{A}\vDash\varphi_{2}[\bar{a}]
+\mathbf{A}\vDash(\varphi_{1}\eta\varphi_{2})[\bar{a}]\textnormal{ sii }\mathbf{A}\vDash\varphi_{1}[\bar{a}]\,``\eta"\,\mathbf{A}\vDash\varphi_{2}[\bar{a}]
 \]
 
 \end_inset
@@ -2270,7 +2266,7 @@ Sea
 
 \begin_inset Formula 
 \[
-\mathbf{\textnormal{ sii }A}\vDash\varphi_{1}[\gamma(\bar{a})]"\eta"\mathbf{B}\vDash\varphi_{2}[\gamma(\bar{a})]\textnormal{ sii }\mathbf{B}\vDash(\varphi_{1}\eta\varphi_{2})[\gamma(\bar{a})].
+\mathbf{\textnormal{ sii }A}\vDash\varphi_{1}[\gamma(\bar{a})]\,``\eta"\,\mathbf{B}\vDash\varphi_{2}[\gamma(\bar{a})]\textnormal{ sii }\mathbf{B}\vDash(\varphi_{1}\eta\varphi_{2})[\gamma(\bar{a})].
 \]
 
 \end_inset
@@ -2299,7 +2295,7 @@ Sea
 
 \end_inset
 
- Es rutina ver que 
+ Es de rutina ver que 
 \begin_inset Formula $\gamma$
 \end_inset
 
@@ -2320,9 +2316,9 @@ Veamos que
 \begin_inset Formula 
 \begin{align*}
 \gamma(a) & =\gamma(a')\\
-\mathbf{B} & \vDash(x_{1}\equiv x_{2})[\gamma(a),\gamma(a')]\\
-\mathbf{A} & \vDash(x_{1}\equiv x_{2})[a,a']\\
-a & =a'.
+\mbox{sii }\mathbf{B} & \vDash(x_{1}\equiv x_{2})[\gamma(a),\gamma(a')]\\
+\mbox{sii }\mathbf{A} & \vDash(x_{1}\equiv x_{2})[a,a']\\
+\mbox{sii }a & =a'.
 \end{align*}
 
 \end_inset
@@ -2352,9 +2348,9 @@ Sea
 \begin_inset Formula 
 \begin{align*}
 (\gamma(a_{1}),\dots,\gamma(a_{n})) & \in r^{\mathbf{B}}\\
-\mathbf{B} & \vDash r(x_{1},\dots,x_{n})[\gamma(a_{1}),\dots,\gamma(a_{n})]\\
-\mathbf{A} & \vDash r(x_{1},\dots,x_{n})[a_{1},\dots,a_{n}]\\
-(a_{1},\dots,a_{n}) & \in r^{\mathbf{A}}.
+\mbox{sii }\mathbf{B} & \vDash r(x_{1},\dots,x_{n})[\gamma(a_{1}),\dots,\gamma(a_{n})]\\
+\mbox{sii }\mathbf{A} & \vDash r(x_{1},\dots,x_{n})[a_{1},\dots,a_{n}]\\
+\mbox{sii }(a_{1},\dots,a_{n}) & \in r^{\mathbf{A}}.
 \end{align*}
 
 \end_inset
@@ -2577,7 +2573,7 @@ reference "thm:embeddings preservan abiertas"
 \end_inset
 
  es un embedding.
- Por último, es evidente de la definición que
+ Por último, es evidente de la definición que 
 \begin_inset Formula $\gamma$
 \end_inset
 
@@ -2961,7 +2957,7 @@ Sean
 \begin_inset Formula $\mathcal{L}'$
 \end_inset
 
--estructuras, los siguientes son equivalentes:
+-estructuras finitas, los siguientes son equivalentes:
 \end_layout
 
 \begin_deeper
@@ -3368,7 +3364,7 @@ Sean
 \begin_inset Formula $\mathcal{L}'$
 \end_inset
 
--estructuras, los siguientes son equivalentes:
+-estructuras finitas, los siguientes son equivalentes:
 \end_layout
 
 \begin_deeper
@@ -5399,8 +5395,7 @@ y como
 \end_layout
 
 \begin_layout Proof
-Supongamos ahora que .
- Entonces hay algún 
+Entonces hay algún 
 \begin_inset Formula $\mathbf{A}\in\mathcal{K}$
 \end_inset
 
@@ -5498,7 +5493,7 @@ tenemos que
 \end_inset
 
 .
- Entonces, ya que
+ Entonces, ya que 
 \begin_inset Formula $\bar{a}\in R^{\mathbf{A}}$
 \end_inset
 
@@ -6869,7 +6864,7 @@ Directa ya que la composición de funciones que preservan
 \end_inset
 
 .
- Luego aplicando el Teorema
+ Luego aplicando el Teorema 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "thm:construccion de constelacion abierta"
@@ -8885,7 +8880,7 @@ Directa ya que la composición de funciones que preservan
 \end_inset
 
 .
- Luego aplicando el Teorema
+ Luego aplicando el Teorema 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "thm:construccion de constelacion abierta positiva"
@@ -8970,11 +8965,11 @@ Sean
 \end_inset
 
  estructuras finitas y 
-\begin_inset Formula $f:A\rightarrow B$
+\begin_inset Formula $f:\mathbf{A}\rightarrow\mathbf{B}$
 \end_inset
 
  y 
-\begin_inset Formula $g:B\rightarrow A$
+\begin_inset Formula $g:\mathbf{B}\rightarrow\mathbf{A}$
 \end_inset
 
  homomorfismos inyectivos.
@@ -8995,7 +8990,7 @@ Sean
 \end_inset
 
  tal que 
-\begin_inset Formula $(gf)^{k}=\mathrm{Id}_{A}$
+\begin_inset Formula $(gf)^{k}=\mathrm{Id}_{\mathbf{A}}$
 \end_inset
 
 .
@@ -17769,8 +17764,11 @@ Arquitectura del paquete
 
 \begin_layout Standard
 Nuestro paquete se basa en parte en las librerías desarrolladas por Peter
- Jipsen para utilizar Minion, Universal Álgebra Calculator, Mace4 y Prover9
- desde SageMath disponibles en 
+ Jipsen para utilizar Minion, 
+\lang english
+Universal Algebra Calculator
+\lang spanish
+, Mace4 y Prover9 desde SageMath disponibles en 
 \begin_inset CommandInset href
 LatexCommand href
 target "http://math.chapman.edu/~jipsen/sagepkg/"
@@ -18556,17 +18554,27 @@ status open
 
 \begin_layout Plain Layout
 
-l2x2 = definability.FO_Model(tlat, uni, {'^': meet,
+lat2x2 = definability.FO_Model(tlat,
 \end_layout
 
 \begin_layout Plain Layout
 
-                                         'v': join},
+                               universe,
 \end_layout
 
 \begin_layout Plain Layout
 
-                                        {'P': rP})
+                               {'^': meet,
+\end_layout
+
+\begin_layout Plain Layout
+
+                                'v': join},
+\end_layout
+
+\begin_layout Plain Layout
+
+                               {'P': rP})
 \end_layout
 
 \end_inset
@@ -18608,7 +18616,7 @@ status open
 
 \begin_layout Plain Layout
 
-c = definability.Constellation([l2x2])
+c = definability.Constellation([lat2x2])
 \end_layout
 
 \end_inset
@@ -19144,7 +19152,11 @@ También, queda pendiente explorar y aprovechar en la implementación, la
 \begin_layout Standard
 También esperamos explorar mejores implementaciones para la generación de
  subestructuras, por ejemplo estudiando los algoritmos utilizados por el
- Universal Álgebra Calculator 
+ 
+\lang english
+Universal Algebra Calculator
+\lang spanish
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "UACalc"
