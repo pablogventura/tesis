@@ -1155,10 +1155,10 @@ Consideremos en el reticulado
 \end_inset
 
  la relación unaria 
-\begin_inset Formula $P$
+\begin_inset Formula $P=\left\{ 2,3\right\} $
 \end_inset
 
- dada por el siguiente diagrama.
+ representada en el siguiente diagrama.
  ¿Es 
 \begin_inset Formula $P$
 \end_inset
@@ -1367,14 +1367,14 @@ reference "prob:principal"
 \end_inset
 
  a clases de estructuras en las cuales el CSP para cómputo de morfismos
- está bien condicionado (véase, por ejemplo, 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "MacCSP"
+ está bien condicionado como explicamos en la Sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Trabajo-futuro"
 
 \end_inset
 
-).
+.
 \end_layout
 
 \begin_layout Section
@@ -19103,6 +19103,13 @@ reference "thm:Caracterizacion de las relaciones binarias definibles por existen
 
 \begin_layout Section
 Trabajo futuro
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Trabajo-futuro"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
