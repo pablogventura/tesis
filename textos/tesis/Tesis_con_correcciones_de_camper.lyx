@@ -4766,10 +4766,14 @@ Luego, como
 \end_inset
 
  n-aria.
- Sean 
+ Sea 
+\begin_inset Formula $\mathbf{P}=\mathbf{A}_{1}^{\left|R^{\mathbf{A}_{1}}\right|}\times\cdots\times\mathbf{A}_{m}^{\left|R^{\mathbf{A}_{m}}\right|}$
+\end_inset
+
+, sean 
 \begin_inset Formula 
 \[
-\enumeracion[][\bar{x}]\in\mathbf{A}_{1}^{\left|R^{\mathbf{A}_{1}}\right|}\times\cdots\times\mathbf{A}_{m}^{\left|R^{\mathbf{A}_{m}}\right|}
+\enumeracion[][\bar{x}]\in P
 \]
 
 \end_inset
@@ -4789,13 +4793,13 @@ para cada
  con 
 \begin_inset Formula 
 \[
-\bigcup R^{\mathbf{A}_{j}}=\left\{ \left(x_{1i}^{j},\dots,x_{ni}^{j}\right)\text{ con }i\in\left\{ 1,\dots,\left|R^{\mathbf{A}_{j}}\right|\right\} \right\} 
+R_{j}=\left\{ \left(x_{1i}^{j},\dots,x_{ni}^{j}\right)\text{ con }i\in\left\{ 1,\dots,\left|R^{\mathbf{A}_{j}}\right|\right\} \right\} 
 \]
 
 \end_inset
 
 para cada 
-\begin_inset Formula $i\in\left\{ 1,\dots,m\right\} $
+\begin_inset Formula $j\in\left\{ 1,\dots,m\right\} $
 \end_inset
 
  .
@@ -4817,7 +4821,7 @@ reference "thm:cantidad de formulas es finita"
  al diagrama atómico positivo 
 \begin_inset Formula 
 \[
-\Delta_{\mathbf{A}_{1}^{\left|R^{\mathbf{A}_{1}}\right|}\times\cdots\times\mathbf{A}_{m}^{\left|R^{\mathbf{A}_{m}}\right|},\left(\enumeracion[][\bar{x}]\right)}^{+}(\bar{x}).
+\Delta_{\mathbf{P},\left(\enumeracion[][\bar{x}]\right)}^{+}(\bar{x}).
 \]
 
 \end_inset
@@ -4834,7 +4838,7 @@ reference "thm:cantidad de formulas es finita"
  Como 
 \begin_inset Formula 
 \[
-\sat{\mathbf{B}}{\Delta_{\mathbf{A}_{1}^{\left|R^{\mathbf{A}_{1}}\right|}\times\cdots\times\mathbf{A}_{m}^{\left|R^{\mathbf{A}_{m}}\right|},\left(\enumeracion[][\bar{x}]\right)}^{+}}{\enumeracion[][b]},
+\sat{\mathbf{B}}{\Delta_{\mathbf{P},\left(\enumeracion[][\bar{x}]\right)}^{+}}{\enumeracion[][b]},
 \]
 
 \end_inset
@@ -4851,7 +4855,7 @@ reference "thm:diagrama atomico positivo sii homomorfismo"
 \end_inset
 
  homomorfismo de 
-\begin_inset Formula $\left\langle \enumeracion[][\bar{x}]\right\rangle ^{\mathbf{A}_{1}^{\left|R^{\mathbf{A}_{1}}\right|}\times\cdots\times\mathbf{A}_{m}^{\left|R^{\mathbf{A}_{m}}\right|}}$
+\begin_inset Formula $\left\langle \enumeracion[][\bar{x}]\right\rangle ^{\mathbf{P}}$
 \end_inset
 
  en 
@@ -5188,10 +5192,14 @@ Luego, como
 \end_inset
 
  n-aria.
- Sean 
+ Sea 
+\begin_inset Formula $\mathbf{P}=\mathbf{A}_{1}^{\left|R^{\mathbf{A}_{1}}\right|}\times\cdots\times\mathbf{A}_{m}^{\left|R^{\mathbf{A}_{m}}\right|}$
+\end_inset
+
+, y sean 
 \begin_inset Formula 
 \[
-\enumeracion[][\bar{x}]\in\mathbf{A}_{1}^{\left|R^{\mathbf{A}_{1}}\right|}\times\cdots\times\mathbf{A}_{m}^{\left|R^{\mathbf{A}_{m}}\right|}
+\enumeracion[][\bar{x}]\in\mathbf{P}
 \]
 
 \end_inset
@@ -5211,7 +5219,7 @@ para cada
  con 
 \begin_inset Formula 
 \[
-\bigcup R^{\mathbf{A}_{j}}=\left\{ \left(x_{1i}^{j},\dots,x_{ni}^{j}\right)\text{ con }i\in\left\{ 1,\dots,\left|R^{\mathbf{A}_{j}}\right|\right\} \right\} 
+R_{j}=\left\{ \left(x_{1i}^{j},\dots,x_{ni}^{j}\right)\text{ con }i\in\left\{ 1,\dots,\left|R^{\mathbf{A}_{j}}\right|\right\} \right\} 
 \]
 
 \end_inset
@@ -5224,7 +5232,7 @@ para cada
  Sean 
 \begin_inset Formula 
 \[
-\enumeracion[k][\bar{x'}]\in\mathbf{A}_{1}^{\left|R^{\mathbf{A}_{1}}\right|}\times\cdots\times\mathbf{A}_{m}^{\left|R^{\mathbf{A}_{m}}\right|},
+\enumeracion[k][\bar{x'}]\in\mathbf{P},
 \]
 
 \end_inset
@@ -5232,7 +5240,7 @@ para cada
 tales que 
 \begin_inset Formula 
 \[
-\left\langle \enumeracion[][\bar{x}],\enumeracion[k][\bar{x'}]\right\rangle ^{\mathbf{A}_{1}^{\left|R^{\mathbf{A}_{1}}\right|}\times\cdots\times\mathbf{A}_{m}^{\left|R^{\mathbf{A}_{m}}\right|}}=\mathbf{A}_{1}^{\left|R^{\mathbf{A}_{1}}\right|}\times\cdots\times\mathbf{A}_{m}^{\left|R^{\mathbf{A}_{m}}\right|}.
+\left\langle \enumeracion[][\bar{x}],\enumeracion[k][\bar{x'}]\right\rangle ^{\mathbf{P}}=\mathbf{P}.
 \]
 
 \end_inset
@@ -5255,7 +5263,7 @@ reference "thm:cantidad de formulas es finita"
  al diagrama atómico positivo 
 \begin_inset Formula 
 \[
-\Delta_{\mathbf{A}_{1}^{\left|R^{\mathbf{A}_{1}}\right|}\times\cdots\times\mathbf{A}_{m}^{\left|R^{\mathbf{A}_{m}}\right|},\left(\enumeracion[][\bar{x}],\enumeracion[k][\bar{x'}]\right)}^{+}(\bar{x},\bar{y}).
+\Delta_{\mathbf{P},\left(\enumeracion[][\bar{x}],\enumeracion[k][\bar{x'}]\right)}^{+}(\bar{x},\bar{y}).
 \]
 
 \end_inset
@@ -5284,7 +5292,7 @@ Supongamos
  tal que 
 \begin_inset Formula 
 \[
-\sat{\mathbf{B}}{\Delta_{\mathbf{A}_{1}^{\left|R^{\mathbf{A}_{1}}\right|}\times\cdots\times\mathbf{A}_{m}^{\left|R^{\mathbf{A}_{m}}\right|},\left(\enumeracion[][\bar{x}],\enumeracion[k][\bar{x'}]\right)}^{+}}{\enumeracion[][b],\enumeracion[k][b']},
+\sat{\mathbf{B}}{\Delta_{\mathbf{P},\left(\enumeracion[][\bar{x}],\enumeracion[k][\bar{x'}]\right)}^{+}}{\enumeracion[][b],\enumeracion[k][b']},
 \]
 
 \end_inset
@@ -5329,14 +5337,10 @@ tal que
 \end_inset
 
  es homomorfismo de 
-\begin_inset Formula 
-\[
-\mathbf{A}_{1}^{\left|R^{\mathbf{A}_{1}}\right|}\times\cdots\times\mathbf{A}_{m}^{\left|R^{\mathbf{A}_{m}}\right|}
-\]
-
+\begin_inset Formula $\mathbf{P}$
 \end_inset
 
-en 
+ en 
 \begin_inset Formula $\mathbf{B}$
 \end_inset
 
