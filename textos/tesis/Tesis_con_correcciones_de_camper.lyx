@@ -948,7 +948,7 @@ Figuras geométricas
 
 \begin_layout Standard
 Supongamos que queremos definir al círculo.
- Necesitamos de una propiedad que solo se cumpla en él.
+ Necesitamos una propiedad que solo se cumpla en él.
  Un ejemplo trivial podría ser 
 \begin_inset Quotes fld
 \end_inset
@@ -984,7 +984,7 @@ Soy el que está a la izquierda de todos los demás
 \end_layout
 
 \begin_layout Standard
-Pero que pasa si restringimos las oraciones utilizando solo expresiones
+Pero qué pasa si restringimos las oraciones utilizando solo expresiones
  del tipo 
 \begin_inset Quotes fld
 \end_inset
@@ -1010,7 +1010,7 @@ Tengo a todos abajo o a la misma altura que yo
 \begin_inset Quotes frd
 \end_inset
 
- y también al hexagono como 
+ y también al hexágono como 
 \begin_inset Quotes fld
 \end_inset
 
@@ -1103,8 +1103,9 @@ El problema
 \end_layout
 
 \begin_layout Standard
-El problema sobre el que trabajamos, trata sobre decidir definibilidad utilizand
-o el lenguaje formal llamado Lógica de Primer Orden.
+El problema sobre el que trabajamos, no trata sobre decidir definibilidad
+ en el lenguaje natural sino en el lenguaje formal llamado Lógica de Primer
+ Orden.
 \end_layout
 
 \begin_layout Standard
@@ -1586,8 +1587,10 @@ Otra característica importante de los algoritmos desarrollados, en este
  caso en relación a su implementación, es que la construcción de morfismos
  se lleva a cabo como una instancia del 
 \emph on
+\lang english
 Constraint Satisfaction Problem
 \emph default
+\lang spanish
  (CSP) (ver, e.g., 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -12299,7 +12302,7 @@ reference "alg:preprocesamiento"
 
 \end_inset
 
- para preprocesamiento, solo basta con revisar los automorfimos para 
+ para preprocesamiento, solo basta con revisar los automorfismos para 
 \begin_inset Formula $\mathbf{A}\in\mathcal{K}$
 \end_inset
 
@@ -12660,7 +12663,11 @@ CSP
 \end_layout
 
 \begin_layout Standard
-Un CSP (constraint satisfaction problem) (ver, e.g., 
+Un CSP 
+\lang english
+(Constraint Satisfaction Problem)
+\lang spanish
+ (ver, e.g., 
 \begin_inset CommandInset citation
 LatexCommand citep
 after "Capítulo 6"
