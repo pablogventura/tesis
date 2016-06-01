@@ -5793,39 +5793,7 @@ Definiciones e ideas preliminares
 \end_layout
 
 \begin_layout Standard
-Una hipótesis técnica que resultó crucial para la concepción y exposición
- de los algoritmos es la siguiente.
-\end_layout
-
-\begin_layout Definition
-Una clase 
-\begin_inset Formula $\mathcal{K}$
-\end_inset
-
- de estructuras será 
-\emph on
-disjunta
-\emph default
- si dadas 
-\begin_inset Formula $\mathbf{A},\mathbf{B}\in\mathcal{K}$
-\end_inset
-
- se tiene que 
-\begin_inset Formula $A\cap B\neq\emptyset$
-\end_inset
-
- si y solo si 
-\begin_inset Formula $\mathbf{A}=\mathbf{B}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Notar que esta hipótesis no afecta el grado de generalidad de los resultados
- y algoritmos, ya que basta con renombrar los elementos repetidos para obtener
- una clase disjunta equivalente.
- La clase 
+Una clase de estructuras 
 \begin_inset Formula $\mathcal{K}$
 \end_inset
 
@@ -5833,7 +5801,7 @@ Notar que esta hipótesis no afecta el grado de generalidad de los resultados
 \emph on
 normal
 \emph default
- si es disjunta, finita y cada una de las estructuras en 
+ si es finita y cada una de las estructuras en 
 \begin_inset Formula $\mathcal{K}$
 \end_inset
 
@@ -5857,58 +5825,6 @@ Dada una clase de estructuras
 
 .
  
-\end_layout
-
-\begin_layout Standard
-La razón principal para trabajar con clases disjuntas reside en que dado
- un morfismo 
-\begin_inset Formula $\funcion[\gamma]{\mathbf{A}}{\mathbf{B}}$
-\end_inset
-
- con 
-\begin_inset Formula $\mathbf{A},\mathbf{B}\in\mathcal{K}$
-\end_inset
-
-, basta con conocer 
-\begin_inset Formula $\dominio{\gamma}$
-\end_inset
-
- e 
-\begin_inset Formula $\imagen{\gamma}$
-\end_inset
-
- (i.e.
- dominio e imagen de 
-\begin_inset Formula $\gamma$
-\end_inset
-
-, respectivamente) para reconocer inequívocamente a 
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
- y 
-\begin_inset Formula $\mathbf{B}$
-\end_inset
-
-.
- A pesar de esto, un morfismo 
-\begin_inset Formula $\funcion[\gamma]{\mathbf{A}}{\mathbf{B}}$
-\end_inset
-
- con 
-\begin_inset Formula $\mathbf{A},\mathbf{B}\in\subestr{\mathbf{C}}\subseteq\subestr{\mathcal{K}}$
-\end_inset
-
-, es indistinguible de 
-\begin_inset Formula $\funcion[\gamma]{\mathbf{A}}{\mathbf{C}}$
-\end_inset
-
-, por lo que necesitaremos trabajar siempre con un conjunto de morfismos
- sobreyectivos cuando trabajemos sobre 
-\begin_inset Formula $\subestr{\mathcal{K}}$
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
