@@ -185,6 +185,7 @@ quiza no deberia tener el margen tan asimetrico!
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -196,7 +197,7 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
