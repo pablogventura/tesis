@@ -1079,7 +1079,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Figuras geométricas
+Figuras geométricas reflejadas
 \end_layout
 
 \end_inset
@@ -10128,6 +10128,23 @@ status open
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Comment 
+\end_layout
+
+\end_inset
+
+para que 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ no sea inyectiva
 \end_layout
 
 \begin_layout Plain Layout
@@ -10570,11 +10587,7 @@ If{
 \begin_inset Formula $\mathcal{L}$
 \end_inset
 
--isomorfismo, con 
-\begin_inset Formula $\mathbf{S}\in\mathcal{S}$
-\end_inset
-
-
+-isomorfismo
 \begin_inset ERT
 status open
 
@@ -11129,7 +11142,23 @@ status open
 
 \begin_layout Plain Layout
 
-	
+
+\backslash
+EndFor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
 \backslash
 State{
 \end_layout
@@ -11173,22 +11202,6 @@ status open
 \begin_layout Plain Layout
 
 }
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-EndFor
 \end_layout
 
 \end_inset
@@ -13722,7 +13735,7 @@ chequearBihomos
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -14327,7 +14340,7 @@ end{algorithmic}
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -15197,7 +15210,7 @@ end{algorithmic}
 \begin_inset Float algorithm
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -16201,11 +16214,7 @@ If{
 \begin_inset Formula $\mathcal{L}$
 \end_inset
 
--isomorfismo, con 
-\begin_inset Formula $\mathbf{S}\in\mathcal{S}$
-\end_inset
-
-
+-isomorfismo
 \begin_inset ERT
 status open
 
@@ -18285,7 +18294,8 @@ status open
 
 \begin_layout Plain Layout
 
-$ git clone https://github.com/pablogventura/definability.git
+$ git clone --branch v0.5.0-alpha https://github.com/pablogventura/definability.git
+ 
 \end_layout
 
 \begin_layout Plain Layout
