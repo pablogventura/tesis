@@ -78,8 +78,8 @@ backgroundcolor=\color{gray75},
 \algnewcommand\Output{\item[\algorithmicoutput]}
 
 %%para tener margenes iguales a pesar de usar book con doble faz
-%\usepackage{geometry}
-%\geometry{bindingoffset=0.7cm,hratio=1:1}
+\usepackage{geometry}
+\geometry{bindingoffset=0cm,hratio=1:1}
 \end_preamble
 \use_default_options false
 \begin_modules
