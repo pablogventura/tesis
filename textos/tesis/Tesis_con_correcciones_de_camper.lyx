@@ -78,8 +78,8 @@ backgroundcolor=\color{gray75},
 \algnewcommand\Output{\item[\algorithmicoutput]}
 
 %%para tener margenes iguales a pesar de usar book con doble faz
-\usepackage{geometry}
-\geometry{bindingoffset=0cm,hratio=1:1}
+%\usepackage{geometry}
+%\geometry{bindingoffset=0cm,hratio=1:1}
 \end_preamble
 \use_default_options false
 \begin_modules
@@ -6572,10 +6572,11 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -6615,7 +6616,7 @@ name "fig:k sin preprocesamiento"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -8556,11 +8557,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -8605,7 +8607,7 @@ reference "thm:definibilidad abierta"
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -11287,11 +11289,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -11336,7 +11339,7 @@ reference "thm:definibilidad abierta positiva"
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
