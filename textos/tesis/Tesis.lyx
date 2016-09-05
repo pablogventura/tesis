@@ -5514,8 +5514,16 @@ Para todas
 \begin_inset Formula $\mathcal{K}$
 \end_inset
 
-, y sea un isomorfismo 
-\begin_inset Formula $\funcion[\gamma]{\mathbf{A}}{\mathbf{B}}$
+, y 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ un isomorfismo de 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{B}$
 \end_inset
 
 .
@@ -8747,7 +8755,7 @@ reference "thm:definibilidad abierta positiva"
 \end_layout
 
 \begin_layout Standard
-En el siguiente teorema describimos un conjunto suficiente de morfismos
+En el siguiente teorema describimos un conjunto de morfismos que es suficiente
  para generar 
 \begin_inset Formula $\subhom{\mathcal{K}_{\mathcal{L}}}$
 \end_inset
@@ -9248,7 +9256,7 @@ La función
 \family typewriter
 chequearBihomos
 \family default
- toma como entradas 
+ toma 
 \begin_inset Formula $\mathbf{A}$
 \end_inset
 
@@ -11401,9 +11409,6 @@ reference "thm:construccion de constelacion abierta positiva"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
 
 \end_layout
 
@@ -12780,7 +12785,11 @@ donde
 \end_inset
 
 , se da que 
-\begin_inset Formula $\left(\left(\enumeracion[a_{n}][X][a_{1}]\right),R^{\mathbf{B}}\right)\in C^{R}$
+\begin_inset Formula 
+\[
+\left(\left(\enumeracion[a_{n}][X][a_{1}]\right),R^{\mathbf{B}}\right)\in C^{R}
+\]
+
 \end_inset
 
  y 
@@ -12796,10 +12805,14 @@ donde
 \end_inset
 
 , se da que 
-\begin_inset Formula $\left(\left(\enumeracion[a_{n}][X][a_{1}],X_{a'}\right),\grafico{f^{\mathbf{B}}}\right)\in C^{f}$
+\begin_inset Formula 
+\[
+\left(\left(\enumeracion[a_{n}][X][a_{1}],X_{a'}\right),\grafico{f^{\mathbf{B}}}\right)\in C^{f}.
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
@@ -13363,10 +13376,14 @@ Una relación
 \end_inset
 
  tal que 
-\begin_inset Formula $r=\{h(\bar{a}):h\in\subiso{\mathbf{A}}\}$
+\begin_inset Formula 
+\[
+r=\{h(\bar{a}):h\in\subiso{\mathbf{A}}\}.
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Proof
@@ -13464,6 +13481,13 @@ es claro que hay un
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Lemma
 \begin_inset CommandInset label
 LatexCommand label
@@ -13484,10 +13508,14 @@ Una relación
 \end_inset
 
  tal que 
-\begin_inset Formula $r=\{h(\bar{a}):h\in\subhom{\mathbf{A}}\}$
+\begin_inset Formula 
+\[
+r=\{h(\bar{a}):h\in\subhom{\mathbf{A}}\}.
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Proof
@@ -13735,11 +13763,62 @@ chequearBihomos
 \end_layout
 
 \begin_layout Standard
+Una vez calculado el conjunto de morfismos 
+\begin_inset Formula $\mathcal{E}$
+\end_inset
+
+ basta con calcular 
+\begin_inset Formula $\{h(\bar{a}):h\in\mathcal{E}\}$
+\end_inset
+
+ para cada 
+\begin_inset Formula $\bar{a}\in A^{n}$
+\end_inset
+
+, ya que 
+\begin_inset Formula $\mathcal{E}$
+\end_inset
+
+ genera al conjunto correspondiente al tipo de definibilidad.
+ Esto lo hacemos con el Algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:construccion algebra saturacion"
+
+\end_inset
+
+, lo cual ya nos da los elementos join-irreducibles o los átomos, según
+ el tipo de definibilidad en cuestión.
+\end_layout
+
+\begin_layout Standard
+Para los demás tipos de definibilidad, el procedimiento seria análogo.
+ Generar el conjunto de morfismos 
+\begin_inset Formula $\mathcal{E}$
+\end_inset
+
+ basados en los algoritmos del capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:algoritmos de chequeo"
+
+\end_inset
+
+ y saturar según el Algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:construccion algebra saturacion"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float algorithm
-placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -14341,10 +14420,9 @@ end{algorithmic}
 
 \begin_layout Standard
 \begin_inset Float algorithm
-placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -15212,9 +15290,10 @@ end{algorithmic}
 
 \begin_layout Standard
 \begin_inset Float algorithm
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -16612,55 +16691,10 @@ end{algorithmic}
 \end_layout
 
 \begin_layout Standard
-Una vez calculado el conjunto de morfismos 
-\begin_inset Formula $\mathcal{E}$
+\begin_inset Newpage pagebreak
 \end_inset
 
- basta con calcular 
-\begin_inset Formula $\{h(\bar{a}):h\in\mathcal{E}\}$
-\end_inset
 
- para cada 
-\begin_inset Formula $\bar{a}\in A^{n}$
-\end_inset
-
-, ya que 
-\begin_inset Formula $\mathcal{E}$
-\end_inset
-
- genera al conjunto correspondiente al tipo de definibilidad.
- Esto lo hacemos con el Algoritmo 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "alg:construccion algebra saturacion"
-
-\end_inset
-
-, lo cual ya nos da los elementos join-irreducibles o los átomos, según
- el tipo de definibilidad en cuestión.
-\end_layout
-
-\begin_layout Standard
-Para los demás tipos de definibilidad, el procedimiento seria análogo.
- Generar el conjunto de morfismos 
-\begin_inset Formula $\mathcal{E}$
-\end_inset
-
- basados en los algoritmos del capítulo 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:algoritmos de chequeo"
-
-\end_inset
-
- y saturar según el Algoritmo 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "alg:construccion algebra saturacion"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Section
