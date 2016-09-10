@@ -78,8 +78,8 @@ backgroundcolor=\color{gray75},
 \algnewcommand\Output{\item[\algorithmicoutput]}
 
 %%para tener margenes iguales a pesar de usar book con doble faz
-\usepackage{geometry}
-\geometry{bindingoffset=0cm,hratio=1:1}
+%\usepackage{geometry}
+%\geometry{bindingoffset=0cm,hratio=1:1}
 \end_preamble
 \use_default_options false
 \begin_modules
@@ -902,8 +902,8 @@ Motivación
 \end_layout
 
 \begin_layout Standard
-Al definir un objeto entre otros es fundamental la capacidad expresiva del
- lenguaje con el que contamos.
+Al definir un objeto entre otros es fundamental la capacidad del lenguaje
+ con el que contamos.
  Para ilustrar la idea, veamos el siguiente esquema con figuras geométricas.
  Cada figura tiene una forma y una ubicación propia.
 \end_layout
@@ -948,8 +948,8 @@ Figuras geométricas
 \end_layout
 
 \begin_layout Standard
-Si queremos definir el círculo, necesitamos una propiedad que solo se cumpla
- en él.
+Supongamos que queremos definir al círculo.
+ Necesitamos una propiedad que solo se cumpla en él.
  Un ejemplo trivial podría ser 
 \begin_inset Quotes fld
 \end_inset
@@ -970,7 +970,7 @@ definido
 
 \begin_layout Standard
 El problema se vuelve más interesante si restringimos un poco el lenguaje.
- Supongamos ahora que queremos definir el circulo, pero ya no podemos usar
+ Supongamos ahora que queremos definir al circulo, pero ya no podemos usar
  los nombres de las figuras geométricas.
  Tenemos la alternativa de definirlo como 
 \begin_inset Quotes fld
@@ -985,12 +985,12 @@ Soy el que está a la izquierda de todos los demás
 \end_layout
 
 \begin_layout Standard
-Ahora restrinjamos aún más el lenguaje, esta vez utilizando solo expresiones
+Pero qué pasa si restringimos las oraciones utilizando solo expresiones
  del tipo 
 \begin_inset Quotes fld
 \end_inset
 
-está arriba o a la misma altura que
+esta arriba o a la misma altura que
 \begin_inset Quotes frd
 \end_inset
 
@@ -998,7 +998,7 @@ está arriba o a la misma altura que
 \begin_inset Quotes fld
 \end_inset
 
-está abajo o a la misma altura que
+esta abajo o a la misma altura que
 \begin_inset Quotes frd
 \end_inset
 
@@ -1020,8 +1020,12 @@ Tengo a todos arriba o a la misma altura que yo
 \end_inset
 
 .
- Pero si intentamos definir el círculo, esta vez nuestro lenguaje ha perdido
- la capacidad de distinguir entre derecha e izquierda.
+\end_layout
+
+\begin_layout Standard
+Pero volvamos a intentar definir el círculo.
+ Esta vez nuestro lenguaje ha perdido la capacidad de distinguir entre derecha
+ e izquierda.
  Todo lo que podemos decir sobre él es que 
 \begin_inset Quotes fld
 \end_inset
@@ -1032,7 +1036,7 @@ Tengo alguien arriba o a la misma altura que yo, que no soy yo y tengo alguien
 \end_inset
 
 .
- Finalmente estamos ante un dilema, ya que el cuadrado cumple esa misma
+ Finalmente estamos en un problema, ya que el cuadrado cumple esa misma
  propiedad.
  Ahora ya no podemos definir al circulo, ya que todo lo que podemos decir
  de él en nuestro nuevo lenguaje, lo cumple también el cuadrado.
@@ -1041,8 +1045,8 @@ Tengo alguien arriba o a la misma altura que yo, que no soy yo y tengo alguien
 \begin_layout Standard
 Esto se debe a que reflejar nuestro dibujo como en la figura siguiente,
  mantiene el orden respecto de quién estaba abajo de quién (i.e preserva
- las propiedades expresables en nuestro lenguaje), pero invierte derecha
- e izquierda.
+ las propiedades expresables en nuestro lenguaje), pero invierte la derecha
+ y la izquierda.
  Esto representa un 
 \emph on
 automorfismo
@@ -3242,7 +3246,7 @@ Para todas
 \begin_inset Formula $\mathbf{B}_{0}\leq\mathbf{B}_{\mathcal{L}}$
 \end_inset
 
-, se da que todo isomorfismo 
+, se tiene que todo isomorfismo 
 \begin_inset Formula $\sigma:\mathbf{A}_{0}\rightarrow\mathbf{B}_{0}$
 \end_inset
 
@@ -3641,7 +3645,7 @@ Para todas
 \begin_inset Formula $\mathbf{A},\mathbf{B}\in\mathcal{K}$
 \end_inset
 
-, y todas 
+, todas 
 \begin_inset Formula $\mathbf{A}_{0}\leq\mathbf{A}_{\mathcal{L}}$
 \end_inset
 
@@ -3649,7 +3653,7 @@ Para todas
 \begin_inset Formula $\mathbf{B}_{0}\leq\mathbf{B}_{\mathcal{L}}$
 \end_inset
 
-, todo homomorfismo 
+, se tiene que todo homomorfismo 
 \begin_inset Formula $h:\mathbf{A}_{0}\rightarrow\mathbf{B}_{0}$
 \end_inset
 
@@ -3881,7 +3885,7 @@ Para todas
 \begin_inset Formula $\mathbf{A},\mathbf{B}\in\mathcal{K}$
 \end_inset
 
-, se da que todo embedding 
+, se tiene que todo embedding 
 \begin_inset Formula $\gamma:\mathbf{A}_{\mathcal{L}}\rightarrow\mathbf{B}_{\mathcal{L}}$
 \end_inset
 
@@ -4080,7 +4084,7 @@ Sea
 \end_inset
 
 .
- Entonces hay algún 
+ Entonces para algún 
 \begin_inset Formula $\mathbf{A}\in\mathcal{K}$
 \end_inset
 
@@ -4088,7 +4092,7 @@ Sea
 \begin_inset Formula $\bar{a}\in R^{\mathbf{A}}$
 \end_inset
 
- tales que cumplan 
+ tales que 
 \begin_inset Formula $\sat{\mathbf{B}}{\exists\bar{y}\,\delta_{\mathbf{A},(\bar{a},\bar{a'})}\left(\bar{x},\bar{y}\right)}{\bar{b}}$
 \end_inset
 
@@ -4877,14 +4881,10 @@ reference "thm:diagrama atomico positivo sii homomorfismo"
 \end_inset
 
 , se da que 
-\begin_inset Formula 
-\[
-\left(\enumeracion[][b]\right)=\left(h\left(\bar{x}_{1}\right),\dots,h\left(\bar{x}_{n}\right)\right)\in R^{\mathbf{B}}.
-\]
-
+\begin_inset Formula $\left(\enumeracion[][b]\right)=\left(h\left(\bar{x}_{1}\right),\dots,h\left(\bar{x}_{n}\right)\right)\in R^{\mathbf{B}}$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Proof
@@ -4998,7 +4998,7 @@ Para cada
 \begin_inset Formula $m\geq1$
 \end_inset
 
-, y para todas 
+, para todas 
 \begin_inset Formula $\enumeracion[m][\mathbf{A}],\mathbf{B}\in\mathcal{K}$
 \end_inset
 
@@ -5514,16 +5514,8 @@ Para todas
 \begin_inset Formula $\mathcal{K}$
 \end_inset
 
-, y 
-\begin_inset Formula $\gamma$
-\end_inset
-
- un isomorfismo de 
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
- en 
-\begin_inset Formula $\mathbf{B}$
+, y sea un isomorfismo 
+\begin_inset Formula $\funcion[\gamma]{\mathbf{A}}{\mathbf{B}}$
 \end_inset
 
 .
@@ -8755,7 +8747,7 @@ reference "thm:definibilidad abierta positiva"
 \end_layout
 
 \begin_layout Standard
-En el siguiente teorema describimos un conjunto de morfismos que es suficiente
+En el siguiente teorema describimos un conjunto suficiente de morfismos
  para generar 
 \begin_inset Formula $\subhom{\mathcal{K}_{\mathcal{L}}}$
 \end_inset
@@ -9256,7 +9248,7 @@ La función
 \family typewriter
 chequearBihomos
 \family default
- toma 
+ toma como entradas 
 \begin_inset Formula $\mathbf{A}$
 \end_inset
 
@@ -11409,6 +11401,9 @@ reference "thm:construccion de constelacion abierta positiva"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
 
 \end_layout
 
@@ -12785,11 +12780,7 @@ donde
 \end_inset
 
 , se da que 
-\begin_inset Formula 
-\[
-\left(\left(\enumeracion[a_{n}][X][a_{1}]\right),R^{\mathbf{B}}\right)\in C^{R}
-\]
-
+\begin_inset Formula $\left(\left(\enumeracion[a_{n}][X][a_{1}]\right),R^{\mathbf{B}}\right)\in C^{R}$
 \end_inset
 
  y 
@@ -12805,14 +12796,10 @@ donde
 \end_inset
 
 , se da que 
-\begin_inset Formula 
-\[
-\left(\left(\enumeracion[a_{n}][X][a_{1}],X_{a'}\right),\grafico{f^{\mathbf{B}}}\right)\in C^{f}.
-\]
-
+\begin_inset Formula $\left(\left(\enumeracion[a_{n}][X][a_{1}],X_{a'}\right),\grafico{f^{\mathbf{B}}}\right)\in C^{f}$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -13376,14 +13363,10 @@ Una relación
 \end_inset
 
  tal que 
-\begin_inset Formula 
-\[
-r=\{h(\bar{a}):h\in\subiso{\mathbf{A}}\}.
-\]
-
+\begin_inset Formula $r=\{h(\bar{a}):h\in\subiso{\mathbf{A}}\}$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Proof
@@ -13481,13 +13464,6 @@ es claro que hay un
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Lemma
 \begin_inset CommandInset label
 LatexCommand label
@@ -13508,14 +13484,10 @@ Una relación
 \end_inset
 
  tal que 
-\begin_inset Formula 
-\[
-r=\{h(\bar{a}):h\in\subhom{\mathbf{A}}\}.
-\]
-
+\begin_inset Formula $r=\{h(\bar{a}):h\in\subhom{\mathbf{A}}\}$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Proof
@@ -13763,62 +13735,11 @@ chequearBihomos
 \end_layout
 
 \begin_layout Standard
-Una vez calculado el conjunto de morfismos 
-\begin_inset Formula $\mathcal{E}$
-\end_inset
-
- basta con calcular 
-\begin_inset Formula $\{h(\bar{a}):h\in\mathcal{E}\}$
-\end_inset
-
- para cada 
-\begin_inset Formula $\bar{a}\in A^{n}$
-\end_inset
-
-, ya que 
-\begin_inset Formula $\mathcal{E}$
-\end_inset
-
- genera al conjunto correspondiente al tipo de definibilidad.
- Esto lo hacemos con el Algoritmo 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "alg:construccion algebra saturacion"
-
-\end_inset
-
-, lo cual ya nos da los elementos join-irreducibles o los átomos, según
- el tipo de definibilidad en cuestión.
-\end_layout
-
-\begin_layout Standard
-Para los demás tipos de definibilidad, el procedimiento seria análogo.
- Generar el conjunto de morfismos 
-\begin_inset Formula $\mathcal{E}$
-\end_inset
-
- basados en los algoritmos del capítulo 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:algoritmos de chequeo"
-
-\end_inset
-
- y saturar según el Algoritmo 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "alg:construccion algebra saturacion"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float algorithm
+placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -14420,9 +14341,10 @@ end{algorithmic}
 
 \begin_layout Standard
 \begin_inset Float algorithm
+placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -15290,10 +15212,9 @@ end{algorithmic}
 
 \begin_layout Standard
 \begin_inset Float algorithm
-placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -16691,10 +16612,55 @@ end{algorithmic}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+Una vez calculado el conjunto de morfismos 
+\begin_inset Formula $\mathcal{E}$
 \end_inset
 
+ basta con calcular 
+\begin_inset Formula $\{h(\bar{a}):h\in\mathcal{E}\}$
+\end_inset
 
+ para cada 
+\begin_inset Formula $\bar{a}\in A^{n}$
+\end_inset
+
+, ya que 
+\begin_inset Formula $\mathcal{E}$
+\end_inset
+
+ genera al conjunto correspondiente al tipo de definibilidad.
+ Esto lo hacemos con el Algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:construccion algebra saturacion"
+
+\end_inset
+
+, lo cual ya nos da los elementos join-irreducibles o los átomos, según
+ el tipo de definibilidad en cuestión.
+\end_layout
+
+\begin_layout Standard
+Para los demás tipos de definibilidad, el procedimiento seria análogo.
+ Generar el conjunto de morfismos 
+\begin_inset Formula $\mathcal{E}$
+\end_inset
+
+ basados en los algoritmos del capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:algoritmos de chequeo"
+
+\end_inset
+
+ y saturar según el Algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:construccion algebra saturacion"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
