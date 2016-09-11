@@ -5192,10 +5192,14 @@ Luego, como
 
  n-aria.
  Sea 
-\begin_inset Formula $\mathbf{P}=\mathbf{A}_{1}^{\left|R^{\mathbf{A}_{1}}\right|}\times\cdots\times\mathbf{A}_{m}^{\left|R^{\mathbf{A}_{m}}\right|}$
+\begin_inset Formula 
+\[
+\mathbf{P}=\mathbf{A}_{1}^{\left|R^{\mathbf{A}_{1}}\right|}\times\cdots\times\mathbf{A}_{m}^{\left|R^{\mathbf{A}_{m}}\right|},
+\]
+
 \end_inset
 
-, y sean 
+y sean 
 \begin_inset Formula 
 \[
 \enumeracion[][\bar{x}]\in\mathbf{P}
