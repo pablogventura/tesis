@@ -6578,6 +6578,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename img/k sin preprocesamiento.svg
 	scale 40
@@ -6618,6 +6619,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename img/k preprocesado.svg
 	scale 40
@@ -8563,6 +8565,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename img/categoria abierta.svg
 	scale 40
@@ -8608,6 +8611,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename img/constelacion abierta.svg
 	scale 40
@@ -11294,6 +11298,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename img/categoria abierta positiva.svg
 	scale 40
@@ -11339,6 +11344,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename img/constelacion abierta positiva.svg
 	scale 40
