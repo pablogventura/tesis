@@ -901,8 +901,8 @@ Motivación
 \end_layout
 
 \begin_layout Standard
-Al definir un objeto entre otros es fundamental la capacidad del lenguaje
- con el que contamos.
+Al definir un objeto entre otros es fundamental la capacidad expresiva del
+ lenguaje con el que contamos.
  Para ilustrar la idea, veamos el siguiente esquema con figuras geométricas.
  Cada figura tiene una forma y una ubicación propia.
 \end_layout
@@ -947,8 +947,8 @@ Figuras geométricas
 \end_layout
 
 \begin_layout Standard
-Supongamos que queremos definir al círculo.
- Necesitamos una propiedad que solo se cumpla en él.
+Supongamos que queremos definir el círculo.
+ Para lograrlo necesitamos una propiedad que solo se cumpla en él.
  Un ejemplo trivial podría ser 
 \begin_inset Quotes fld
 \end_inset
@@ -984,12 +984,12 @@ Soy el que está a la izquierda de todos los demás
 \end_layout
 
 \begin_layout Standard
-Pero qué pasa si restringimos las oraciones utilizando solo expresiones
+Ahora restrinjamos aún más el lenguaje, esta vez utilizando solo expresiones
  del tipo 
 \begin_inset Quotes fld
 \end_inset
 
-esta arriba o a la misma altura que
+está arriba o a la misma altura que
 \begin_inset Quotes frd
 \end_inset
 
@@ -997,7 +997,7 @@ esta arriba o a la misma altura que
 \begin_inset Quotes fld
 \end_inset
 
-esta abajo o a la misma altura que
+está abajo o a la misma altura que
 \begin_inset Quotes frd
 \end_inset
 
@@ -1022,9 +1022,8 @@ Tengo a todos arriba o a la misma altura que yo
 \end_layout
 
 \begin_layout Standard
-Pero volvamos a intentar definir el círculo.
- Esta vez nuestro lenguaje ha perdido la capacidad de distinguir entre derecha
- e izquierda.
+Pero si intentamos definir el círculo, esta vez nuestro lenguaje ha perdido
+ la capacidad de distinguir entre derecha e izquierda.
  Todo lo que podemos decir sobre él es que 
 \begin_inset Quotes fld
 \end_inset
@@ -1035,7 +1034,7 @@ Tengo alguien arriba o a la misma altura que yo, que no soy yo y tengo alguien
 \end_inset
 
 .
- Finalmente estamos en un problema, ya que el cuadrado cumple esa misma
+ Finalmente estamos ante un problema, ya que el cuadrado cumple esa misma
  propiedad.
  Ahora ya no podemos definir al circulo, ya que todo lo que podemos decir
  de él en nuestro nuevo lenguaje, lo cumple también el cuadrado.
@@ -1044,8 +1043,8 @@ Tengo alguien arriba o a la misma altura que yo, que no soy yo y tengo alguien
 \begin_layout Standard
 Esto se debe a que reflejar nuestro dibujo como en la figura siguiente,
  mantiene el orden respecto de quién estaba abajo de quién (i.e preserva
- las propiedades expresables en nuestro lenguaje), pero invierte la derecha
- y la izquierda.
+ las propiedades expresables en nuestro lenguaje), pero invierte derecha
+ e izquierda.
  Esto representa un 
 \emph on
 automorfismo
